@@ -1,0 +1,26 @@
+<?php get_header(); ?>
+		<?php if (have_posts()) : ?>
+		<?php while (have_posts()) : the_post(); ?>
+		<div class="post" id="post-<?php the_ID(); ?>">
+			<div class="post-header clear">
+				<h1 class="single"><?php the_title(); ?></h1>
+				<div class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
+			</div><!--end post header-->
+			<div class="meta">
+				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
+				<div class="author">by <?php the_author() ?></div>
+			</div><!--end meta-->
+			<div class="entry">
+				<?php the_content('Read the rest of this entry &rarr;'); ?>
+			</div><!--end entry-->
+			<div class="post-footer">
+				<p>from &rarr; <?php the_category(', ') ?></p>
+			</div><!--end post footer-->
+		</div><!--end post-->
+		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+		<?php comments_template(); ?>
+		<?php else : ?>
+		<?php endif; ?>
+	</div><!--end content-->
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

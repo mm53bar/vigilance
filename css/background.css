@@ -1,0 +1,10 @@
+/*	
+  This is your background stylesheet. Use it to change the body background color.
+*/
+body { background: #DCDFC2; }
+#wrapper{
+	background: #fff;
+	padding: 0 20px 10px 20px;
+	border-left: 4px solid #D7DAB9;
+	border-right: 4px solid #D7DAB9;
+	}
