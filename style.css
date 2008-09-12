@@ -26,14 +26,22 @@ Tags: fixed width, two columns, widget ready, valid css, valid XHTML, right side
 
 */
 
-/* 
-Import Stylesheets
-*/
-
+/* Import Stylesheets
+-----------------------------------------------------------*/
 @import url("css/undo.css");
 @import url("css/master.css");
 
-/* Make all custom CSS changes below this line
+/* Required Wordpress Classes, don't remove these.
+-----------------------------------------------------------*/
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+.alignleft { float: left; }
+.alignright { float: right; }
+
+/* Make all custom CSS changes BELOW this line
 -----------------------------------------------------------*/
 
 /* Example: Change the body background to blue:

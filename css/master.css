@@ -501,9 +501,6 @@ div.closed {
 	}
 /*Default Alignment and Images
 ------------------------------------------------------------ */
-.alignleft { float: left; }
-.alignright { float: right; }
-.aligncenter { float: none; }
 .entry .alignleft img, .entry .alignright img, .entry .aligncenter img { border: 1px solid #ddd; }
 .noborder { border: none; }
 .entry .alignright, .entry .alignright blockquote { margin: 0 0 10px 10px; }
