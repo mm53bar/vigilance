@@ -5,7 +5,7 @@
 		<?php while (have_posts()) : the_post(); ?>
     <div class="entries">
       <ul>
-        <li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="comments_number"><?php comments_number('0', '1', '%', ''); ?></span><span class="archdate"><?php the_time('y F j'); ?></span><?php the_title(); ?></a></li>
+        <li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="comments_number"><?php comments_number('0', '1', '%', ''); ?></span><span class="archdate"><?php the_time('n.j.y'); ?></span><?php the_title(); ?></a></li>
       </ul>
     </div><!--end entries-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
