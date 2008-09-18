@@ -463,6 +463,7 @@ div.c-date span {
 form#commentform {
 	margin: 20px 0;
 	}
+#respond { font-size: 1.5em; }
 h4#postcomment {
 	margin: 20px 0 0 0;
 	padding: 0 0 5px 0;
@@ -470,9 +471,8 @@ h4#postcomment {
 	color: #555;
 	border-bottom: 1px solid #ddd;
 	}
-form#commentform label {
+.comment-inputs label {
 	display: block;
-	font-size: 1.5em;
 	margin: 10px 0 5px 0;
 	}
 input.text-input, form#commentform textarea {
@@ -486,14 +486,20 @@ input.text-input, form#commentform textarea {
 	}
 input#author, input#email, input#url { width: 350px; }
 form#commentform input:focus, form#commentform textarea:focus { background: #fff; }
-form#commentform input#submit { 
+form#commentform input#submit {
   padding: 5px;
   width: 150px; 
   }
-form#commentform p.guidelines{
-  font-size: 1.2em;
+form#commentform p.guidelines {
+  font-size: .8em;
 	margin: 10px 0;
+  color: #777;
 	}
+p.subscribe-to-comments, p.comments-rss{ margin: 0 0 10px 0; }
+p.comments-rss a {
+  padding: 0 0 0 19px;
+  background: url(../images/feed-icon.png) no-repeat 0 .15em;
+  }
 /*Extra
 ---------------------------------------*/
 div.closed {

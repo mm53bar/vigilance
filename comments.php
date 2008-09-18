@@ -10,10 +10,6 @@
 	<?php endif; ?>
 </div>
 
-<!---<div id="commentfeed">
-	<p class="com_rss"><?php comments_rss_link(__('comment feed')); ?></p>
-</div>endcommentfeed-->
-
 <?php else : // If there are no comments yet ?>
 <div class="comment-number">
 	<span>No Comments</span>
@@ -59,25 +55,29 @@
 <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>">Logout &raquo;</a></p>
 
 <?php else : ?>
+<div class="comment-inputs">
+  <p><label for="author"><small>Name <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
+  </p>
 
-<p><label for="author"><small>Name <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
-</p>
+  <p><label for="email"><small>Email <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+  </p>
 
-<p><label for="email"><small>Email <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
-</p>
-
-<p><label for="url"><small>Website:</small></label><input class="text-input" type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
-</p>
+  <p><label for="url"><small>Website:</small></label><input class="text-input" type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+  </p>
 
 <?php endif; ?>
 
-<p><label for="comment"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+  <p><label for="comment"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+</div><!--end comment-inputs-->
 <p class="guidelines"><strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published.</p>
+
+<p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>
+
+<?php do_action('comment_form', $post->ID); ?>
+
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
-<?php do_action('comment_form', $post->ID); ?>
-
 </form>
 
 <?php endif; // If registration required and not logged in ?>
