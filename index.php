@@ -13,6 +13,7 @@
 			</div><!--end meta-->
 			<div class="entry">
 				<?php the_content('read more...'); ?>
+        <?php edit_post_link('Edit This','<p>','</p>'); ?>
 			</div><!--end entry-->
 			<div class="post-footer">
 				<p>from &rarr; <?php the_category(', ') ?></p>

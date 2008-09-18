@@ -55,20 +55,19 @@
 <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account') ?>">Logout &raquo;</a></p>
 
 <?php else : ?>
-<div class="comment-inputs">
-  <p><label for="author"><small>Name <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
+  <p><label for="author" class="comment-field"><small>Name <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
   </p>
 
-  <p><label for="email"><small>Email <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
+  <p><label for="email" class="comment-field"><small>Email <?php if ($req) _e('(required)'); ?>:</small></label><input class="text-input" type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
   </p>
 
-  <p><label for="url"><small>Website:</small></label><input class="text-input" type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+  <p><label for="url" class="comment-field"><small>Website:</small></label><input class="text-input" type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
   </p>
 
 <?php endif; ?>
 
-  <p><label for="comment"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
-</div><!--end comment-inputs-->
+  <p><label for="comment" class="comment-field"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
+
 <p class="guidelines"><strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published.</p>
 
 <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>

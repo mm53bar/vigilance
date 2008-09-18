@@ -11,7 +11,8 @@
 				<div class="author">by <?php the_author() ?></div>
 			</div><!--end meta-->
 			<div class="entry">
-				<?php the_content('Read the rest of this entry &rarr;'); ?>
+				<?php the_content(); ?>
+        <?php edit_post_link('Edit This','<p>','</p>'); ?>
 			</div><!--end entry-->
 			<div class="post-footer">
 				<p>from &rarr; <?php the_category(', ') ?></p>

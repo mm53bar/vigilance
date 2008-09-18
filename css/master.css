@@ -471,7 +471,7 @@ h4#postcomment {
 	color: #555;
 	border-bottom: 1px solid #ddd;
 	}
-.comment-inputs label {
+form#commentform label.comment-field {
 	display: block;
 	margin: 10px 0 5px 0;
 	}
