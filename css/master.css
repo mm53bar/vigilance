@@ -441,6 +441,7 @@ div.c-body{
 	float: right;
 	width: 464px;
 	}
+div.c-body p { margin-bottom: 10px; }
 div.c-head{
 	margin: 0 0 10px 0;
 	font-weight: bold;
