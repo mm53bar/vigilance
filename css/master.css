@@ -363,15 +363,13 @@ ul li.widget ul li {
 	padding: 6px 0;
 	}
 ul li.widget ul li a {
-	display: block;
 	padding: 0 0 0 14px;
-	background: url(../images/list-item.gif) no-repeat 0 .5em;
+	background: url(../images/list-item.gif) no-repeat 0 .35em;
 	}
 ul li.widget ul li a:hover {
-	background: url(../images/list-item-hover.gif) no-repeat 0 .5em;
+	background: url(../images/list-item-hover.gif) no-repeat 0 .35em;
 	}
 ul li.widget ul#recentcomments li a {
-	display: normal;
 	padding: 0;
 	background: none;
 	}
