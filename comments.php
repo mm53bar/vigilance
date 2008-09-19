@@ -81,10 +81,9 @@
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
 </form>
-
-<?php endif; // If registration required and not logged in ?>
-
-<?php else : // Comments are closed ?>
-<div class="closed"><p>comments are closed for this entry</p></div>
-<?php endif; ?>
 </div><!--end respond-->
+<?php endif; // If registration required and not logged in ?>
+<p class="note">Please login to post a comment.</p>
+<?php else : // Comments are closed ?>
+<p class="note">Comments are closed for this entry.</p>
+<?php endif; ?>

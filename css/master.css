@@ -500,11 +500,11 @@ p.comments-rss a {
   padding: 0 0 0 19px;
   background: url(../images/feed-icon.png) no-repeat 0 .15em;
   }
-/*Extra
+/*Note
 ---------------------------------------*/
-div.closed {
-	margin: 20px 0 0 0;
-	font: italic bold 1.2em Arial, sans-serif;
+p.note {
+	font-style: italic;
+	font-size: 1.3em;
 	}
 /*Default Alignment and Images
 ------------------------------------------------------------ */
