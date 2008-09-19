@@ -83,7 +83,6 @@
 </form>
 </div><!--end respond-->
 <?php endif; // If registration required and not logged in ?>
-<p class="note">Please login to post a comment.</p>
 <?php else : // Comments are closed ?>
 <p class="note">Comments are closed for this entry.</p>
 <?php endif; ?>
