@@ -370,6 +370,11 @@ ul li.widget ul li a {
 ul li.widget ul li a:hover {
 	background: url(../images/list-item-hover.gif) no-repeat 0 .5em;
 	}
+ul li.widget ul#recentcomments li a {
+	display: normal;
+	padding: 0;
+	background: none;
+	}
 /*RSS Box
 ---------------------------------------*/
 #rss-feed  { padding-top: 10px; }
