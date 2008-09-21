@@ -7,6 +7,6 @@
     <div id="rss-feed" class="clear"> 
       <p><?php echo $feed_intro; ?></p>
       <a class ="rss" href="<?php bloginfo('rss2_url'); ?>">Subscribe to RSS</a>
-      <a class="email" href="<?php echo $feed_email; ?>">Receive email updates</a>
+      <a class="email" href="<?php echo htmlspecialchars($feed_email, UTF-8); ?>">Receive email updates</a>
     </div>
   	
