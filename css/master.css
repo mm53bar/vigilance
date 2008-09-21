@@ -25,7 +25,6 @@ body {
 	font-family: Georgia, "Times New Roman", Times, Serif;
 	line-height: 2.2em;
 	color: #333;
-	background: #fff;
 	}
 a:link, a:visited { color: #772124; }
 .entry a:link, .entry a:visited { font-weight: bold; }

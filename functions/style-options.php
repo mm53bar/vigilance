@@ -4,11 +4,13 @@ require_once( dirname(__FILE__) . '../../functions.php');
 header("Content-type: text/css"); 
 ?>
 <?php //Load Variables
+  $css = get_option('V_background_css'); 
   $background_color = get_option('V_background_color');
   $border_color = get_option('V_border_color'); 
   $link_color = get_option('V_link_color');
   $hover_color = get_option('V_hover_color');
 ?> 
+<?php if ($css == 'Enabled') {?>
 /*Background
 ------------------------------------------------------------ */
 body { background: #<?php echo $background_color; ?>; }
@@ -39,3 +41,4 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 /*Hover 
 ------------------------------------------------------------ */
 a:hover { color: #<?php echo $hover_color; ?>; }
+<?php } ?>
