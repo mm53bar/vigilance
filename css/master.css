@@ -5,14 +5,17 @@
 	If you make edits to this file your layout will break 
 	when you upgrade the theme.
 	
-	Instead add your custom CSS in the style.css file. Any 
-	new styles you add to the style.css file will automatically 
-	override this imported stylesheet.  
+	Instead add your custom CSS to the style.css file
+    in a Child Theme. See this tutorial for more details: 
+    
+    http://themes.jestro.com/vigilance/easy-upgrading-wordpress-child-themes/
+    
+    Any new styles you add to the style.css in your Child Theme
+    will automatically override this imported stylesheet.  
 	
 	This will also make your life a whole
 	lot easier when it comes time to upgrade the theme.
 */
-
 
 
 /*Body & Links 
@@ -24,11 +27,11 @@ body {
 	color: #333;
 	background: #fff;
 	}
-a:link, a:visited { color: #772124 /*#AF2C00*/; }
+a:link, a:visited { color: #772124; }
 .entry a:link, .entry a:visited { font-weight: bold; }
 a:hover {
 	text-decoration: underline;
-	color: #58181B;
+	color: #58181b;
 	}
 /*Basic Structure
 ------------------------------------------------------------ */

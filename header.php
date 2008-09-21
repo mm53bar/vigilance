@@ -24,7 +24,7 @@
 	<link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" rel="stylesheet" />
   <?php $css = get_option('V_background_css'); ?>
   <?php if ($css == 'Enabled') {?>
-  <link href="<?php bloginfo('template_url'); ?>/css/background.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="<?php bloginfo('template_url'); ?>/functions/style-options.php" type="text/css" media="screen" rel="stylesheet" />
   <?php } ?>
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_url'); ?>/css/ie.css" />

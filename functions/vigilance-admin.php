@@ -6,13 +6,37 @@ $options = array (
         array(	"name" => "Layout and Colors",
 						"type" => "subhead"),
             
-        array(	"name" => "Custom background",
-						"desc" => "This will use the background color defined in your <code>/css/background.css</code> stylesheet.",
+        array(	"name" => "Customize layout and colors",
+						"desc" => "If enabled the theme will use the layouts and colors you choose below.",
 					    "id" => $shortname."_background_css",
 					    "std" => "Disabled",
 					    "type" => "select",
 					    "options" => array("Disabled","Enabled")),
-		
+              
+        array(	"name" => "Background color",
+					    "id" => $shortname."_background_color",
+						"desc" => "Your background color. Use Hex values and leave out the leading #.",
+					    "std" => "dcdfc2",
+					    "type" => "text"),
+        
+        array(	"name" => "Border color",
+					    "id" => $shortname."_border_color",
+						"desc" => "Your border color. Use Hex values and leave out the leading #.",
+					    "std" => "d7dab9",
+					    "type" => "text"),
+        
+        array(	"name" => "Link color",
+					    "id" => $shortname."_link_color",
+						"desc" => "Your link color. Use Hex values and leave out the leading #.",
+					    "std" => "772124",
+					    "type" => "text"),
+        
+        array(	"name" => "Link hover color",
+					    "id" => $shortname."_hover_color",
+						"desc" => "Your link hover color. Use Hex values and leave out the leading #.",
+					    "std" => "58181b",
+					    "type" => "text"),
+              
 				array(	"name" => "Top Banner Image",
 						"type" => "subhead"),
 
