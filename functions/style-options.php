@@ -22,7 +22,8 @@ body { background: #<?php echo $background_color; ?>; }
 	}
 /*Links 
 ------------------------------------------------------------ */
-a:link, a:visited { color: #<?php echo $link_color; ?>; }
+.entry a:link, .entry a:visited { color: #<?php echo $link_color; ?>; }
+#sidebar a:link, #sidebar a:visited { color: #<?php echo $link_color; ?>; }
 h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 #nav .page_item a:hover { 
   color: #<?php echo $link_color; ?>;
