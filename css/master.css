@@ -138,7 +138,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 .post-header h1 a:link, .post-header h1 a:visited,.post-header h2 a:link, .post-header h2 a:visited  { color: #444; }
 .post-header h1 a:hover, .post-header h2 a:hover { color: #772124; }
 .comments {
-	padding-top: 5px;
+	padding-top: 10px;
 	font-size: 1.3em;
   color: #757575;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
