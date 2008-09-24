@@ -2,9 +2,9 @@
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="post" id="post-<?php the_ID(); ?>">
-			<div class="post-header clear">
-				<h1 class="single"><?php the_title(); ?></h1>
-				<div class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
+			<div class="post-header">
+        <h1><?php the_title(); ?></h1>
+        <div id="single-date" class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
 			</div><!--end post header-->
 			<div class="meta">
 				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
