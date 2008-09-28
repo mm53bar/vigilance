@@ -469,6 +469,13 @@ div.c-date span {
 	color: #C1C1C1;
 	font-weight: bold;
 	}
+.c-permalink a:link, .c-permalink a:visited {
+  color: #c1c1c1;
+  font-size: .7em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+  }
+
 /*Form
 ---------------------------------------*/
 form#commentform {
