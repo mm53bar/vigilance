@@ -478,12 +478,10 @@ div.c-date span {
 
 /*Form
 ---------------------------------------*/
-form#commentform {
-	margin: 20px 0;
-	}
+form#commentform { margin-bottom: 20px; }
 #respond { font-size: 1.5em; }
 h4#postcomment {
-	margin: 20px 0 0 0;
+	margin: 20px 0;
 	padding: 0 0 5px 0;
 	font-size: 1.6em;
 	color: #555;
