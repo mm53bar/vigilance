@@ -81,6 +81,31 @@ $options = array (
               "options" => array("rows" => "5",
 										   "cols" => "40") ),
                        
+        array(	"name" => "Alert Box",
+						"type" => "subhead"),
+            
+        array(	"name" => "Alert Box On/Off",
+						"desc" => "Toggle the alert box.",
+			    		"id" => $shortname."_alertbox_state",
+			    		"std" => "Off",
+			    		"type" => "select",
+			    		"options" => array("Off", "On")),
+              
+        array(	"name" => "Alert Title",
+					    "id" => $shortname."_alertbox_title",
+              "desc" => "The title of your alert.",
+					    "std" => "",
+					    "type" => "text"),
+        
+        array(	"name" => "Alert Message",
+						"id" => $shortname."_alertbox_content",
+						"desc" => "Must use HTML in the message including <code>&#60;p&#62;</code> tags.",
+						"std" => "",
+						"type" => "textarea",
+						"options" => array("rows" => "8",
+										   "cols" => "70") ),
+              
+        
         array(	"name" => "Sidebar Image",
 						"type" => "subhead"),
 

@@ -51,3 +51,4 @@
 	</div><!--end header-->
 	<div id="content" class="pad">
 		<?php include (TEMPLATEPATH . '/header-banner.php'); ?>
+    <?php if (is_home()) include (TEMPLATEPATH . '/header-alertbox.php'); ?>
