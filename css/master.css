@@ -125,10 +125,17 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	}
 .alert-box {
   margin: 0 0 20px 0;
-  padding: 5px 20px 10px 20px;
+  padding: 0 20px;
   background: #DBE1E4;
 	border-top: 2px solid #BCC7CD;
 	border-bottom: 2px solid #BCC7CD;
+  }
+.alert-box h2, .alert-box h3, .alert-box h4 {
+  margin: 0;
+  padding: 0;
+  }
+.alert-box p {
+  margin: 10px 0;
   }
 /*Post Styling
 ------------------------------------------------------------ */
