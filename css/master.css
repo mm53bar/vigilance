@@ -512,7 +512,7 @@ input.text-input, form#commentform textarea {
   border: 2px solid #acacac;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  width: 600px;
+  width: 591px;
 	}
 input#author, input#email, input#url { width: 350px; }
 form#commentform input:focus, form#commentform textarea:focus { background: #fff; }
