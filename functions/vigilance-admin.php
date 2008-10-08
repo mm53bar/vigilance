@@ -36,6 +36,12 @@ $options = array (
 						"desc" => "Your link hover color. Use Hex values and leave out the leading #.",
 					    "std" => "58181b",
 					    "type" => "text"),
+         
+        array(	"name" => "Disable comment bubble & sidebar menu hover image",
+					    "id" => $shortname."_image_hover",
+						"desc" => "This is useful if you use your own link colors and you don't want the default red showing when a user hovers over the comments bubble or the sidebar menu items.",
+					    "std" => "false",
+					    "type" => "checkbox"),
               
 				array(	"name" => "Top Banner Image",
 						"type" => "subhead"),

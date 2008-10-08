@@ -9,6 +9,7 @@ header("Content-type: text/css");
   $border_color = get_option('V_border_color'); 
   $link_color = get_option('V_link_color');
   $hover_color = get_option('V_hover_color');
+  $image_hover = get_option('V_image_hover');
 ?> 
 <?php if ($css == 'Enabled') {?>
 /*Background
@@ -43,19 +44,25 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 ------------------------------------------------------------ */
 a:hover { color: #<?php echo $hover_color; ?>; }
 
+  <?php if ($image_hover == 'true') { ?>
 /*Hide hover colors on comment images and sidebar menu images
 ------------------------------------------------------------ */
 .comments a:hover { background: url(../images/comments-bubble.gif) no-repeat 0 .4em; }
 ul li.widget ul li a:hover { background: url(../images/list-item.gif) no-repeat 0 .35em; }
+  <?php 
+  } ?>
 
 /*Reset Specific Link Colors
 ------------------------------------------------------------ */
-#content .c-permalink a:link, #content .c-permalink a:visited { color: #c1c1c1; }
-#content .post-footer a:link, #content .post-footer a:visited { color: #333; }
 #content .post-header h1 a:link, #content .post-header h1 a:visited, #content .post-header h2 a:link, #content .post-header h2 a:visited  { color: #444; }
+#content .post-header h1 a:hover, #content .post-header h2 a:hover { color: #<?php echo $link_color; ?>; }
+#content .comments a { color: #757575;	}
+#content .comments a:hover { color: #<?php echo $link_color; ?>; }
 #content .meta a:link, #content .meta a:visited { color: #666; }
 #content .meta a:hover { color: #<?php echo $link_color; ?>; }
-#content .post-header h1 a:hover, #content .post-header h2 a:hover { color: #<?php echo $link_color; ?>; }
+#content .post-footer a:link, #content .post-footer a:visited { color: #333; }
+#content .c-permalink a:link, #content .c-permalink a:visited { color: #c1c1c1; }
 #footer a:link, #footer a:visited { color: #666; }
 #footer a:hover { color: #<?php echo $link_color; ?>; }
-<?php } ?>
+<?php 
+} ?>
