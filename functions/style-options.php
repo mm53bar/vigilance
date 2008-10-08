@@ -22,7 +22,7 @@ body { background: #<?php echo $background_color; ?>; }
 	}
 /*Links 
 ------------------------------------------------------------ */
-.entry a:link, .entry a:visited { color: #<?php echo $link_color; ?>; }
+#content a:link, #content a:visited { color: #<?php echo $link_color; ?>; }
 #sidebar a:link, #sidebar a:visited { color: #<?php echo $link_color; ?>; }
 h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 #nav .page_item a:hover { 
@@ -42,4 +42,20 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 /*Hover 
 ------------------------------------------------------------ */
 a:hover { color: #<?php echo $hover_color; ?>; }
+
+/*Hide hover colors on comment images and sidebar menu images
+------------------------------------------------------------ */
+.comments a:hover { background: url(../images/comments-bubble.gif) no-repeat 0 .4em; }
+ul li.widget ul li a:hover { background: url(../images/list-item.gif) no-repeat 0 .35em; }
+
+/*Reset Specific Link Colors
+------------------------------------------------------------ */
+#content .c-permalink a:link, #content .c-permalink a:visited { color: #c1c1c1; }
+#content .post-footer a:link, #content .post-footer a:visited { color: #333; }
+#content .post-header h1 a:link, #content .post-header h1 a:visited, #content .post-header h2 a:link, #content .post-header h2 a:visited  { color: #444; }
+#content .meta a:link, #content .meta a:visited { color: #666; }
+#content .meta a:hover { color: #<?php echo $link_color; ?>; }
+#content .post-header h1 a:hover, #content .post-header h2 a:hover { color: #<?php echo $link_color; ?>; }
+#footer a:link, #footer a:visited { color: #666; }
+#footer a:hover { color: #<?php echo $link_color; ?>; }
 <?php } ?>
