@@ -11,7 +11,7 @@
 				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
 				<div class="author">by <?php the_author() ?></div>
 			</div><!--end meta-->
-			<div class="entry">
+			<div class="entry clear">
 				<?php the_content('read more...'); ?>
         <?php edit_post_link('Edit This','<p>','</p>'); ?>
 			</div><!--end entry-->

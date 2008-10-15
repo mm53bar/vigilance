@@ -2,7 +2,7 @@
 		<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<h1 class="pagetitle"><?php the_title(); ?></h1>
-			<div class="entry page">
+			<div class="entry page clear">
 				<?php the_content(); ?>
         <?php edit_post_link('Edit This','<p>','</p>'); ?>
 			</div><!--end entry-->
