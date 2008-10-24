@@ -19,7 +19,7 @@
 <?php if ( $comments ) : ?>
   <div id="comments">
   	<?php foreach ($comments as $comment) : ?>
-  	<?php $isByAuthor = false; if($comment->comment_author_email == 'youremail@yourdomain.com') { $isByAuthor = true; } ?>
+  	<?php $isByAuthor = false; if($comment->comment_author_email == get_the_author_email()) { $isByAuthor = true; } ?>
   		<div class="c-single clear <?php if($isByAuthor ) { echo 'admin';} ?> <?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>" >
   			<div class="c-grav"><?php echo get_avatar( get_comment_author_email(), '80' )?></div>
   			<div class="c-body">
