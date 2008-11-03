@@ -12,7 +12,7 @@
 
 <?php else : // If there are no comments yet ?>
 <div class="comment-number">
-	<span>No Comments</span>
+	<span>Leave a comment</span>
 </div>
 <?php endif; ?>
 
