@@ -265,25 +265,25 @@ blockquote {
  color: #fff; 
  }
 .highlight-box h2 { text-transform: uppercase; }
-.entry ul {
+.entry ul, #comments ul {
 	margin: 0 0 10px 10px;
 	}
-.entry ul li {
+.entry ul li, #comments ul li {
 	display: block;
 	margin: 5px 0 0 0;
 	padding: 0 0 0 17px;
 	background: url(../images/list-star.gif) no-repeat 0 .3em;
 	}
-.entry ol {
+.entry ol, #comments ol {
 	list-style-type: decimal;
 	list-style-position: inside;
 	margin: 0 0 10px 10px;
 	}
-.entry ol li ol li { 
+.entry ol li ol li, #comments ol li ol li { 
     font-size: .9em;
     list-style-type: lower-roman; 
     }
-.entry ol li {
+.entry ol li, #comments ol li {
 	margin: 5px 0 0 0;
 	}
 .navigation {
