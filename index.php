@@ -5,7 +5,7 @@
 			<div class="post-header">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				<div class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
-				<div class="comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></div>
+				<div class="comments"><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></div>
 			</div><!--end post header-->
 			<div class="meta">
 				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
