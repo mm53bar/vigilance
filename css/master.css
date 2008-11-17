@@ -449,13 +449,17 @@ a#leavecomment { padding-left: 10px; }
 /*Body
 ---------------------------------------*/
 #comments, ol.commentlist { font-size: 1.3em; }
-div.c-single, ol.commentlist li.comment {
+div.c-single, li.comment {
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	background: #efefef;
 	}
-div.alt, ol.commentlist li.odd { background: #fff; }
-div.admin, ol.commentlist li.bypostauthor, ol.commentlist li.comment-author-admin { background: #DCDFC2; }
+ul.children {
+	margin: 0 0 0 20px;
+  clear: both;
+	}
+div.alt, li.odd { background: #fff; }
+div.admin, li.bypostauthor, li.comment-author-admin { background: #DCDFC2; }
 div.c-grav {
 	float: left;
 	width: 80px;
@@ -466,6 +470,7 @@ div.c-body {
 	float: right;
 	width: 464px;
 	}
+ul.children div.c-body { width: 404px; }
 div.c-body p { margin-bottom: 10px; }
 div.c-head {
 	margin: 0 0 10px 0;
