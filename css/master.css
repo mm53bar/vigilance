@@ -59,7 +59,7 @@ a:hover {
 	padding-top: 5px; 
 	border-top: 1px solid #ddd;
 	}
-.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clear:after, li.comment:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
 /*Header
 ------------------------------------------------------------ */
 #header {
@@ -448,31 +448,31 @@ ul li.widget ul#recentcomments li a {
 a#leavecomment { padding-left: 10px; }
 /*Body
 ---------------------------------------*/
-#comments { font-size: 1.3em; }
-div.c-single {
+#comments, ol.commentlist { font-size: 1.3em; }
+div.c-single, ol.commentlist li.comment {
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	background: #efefef;
 	}
-div.alt { background: #fff; }
-div.admin { background: #DCDFC2; }
-div.c-grav{
+div.alt, ol.commentlist li.odd { background: #fff; }
+div.admin, ol.commentlist li.bypostauthor, ol.commentlist li.comment-author-admin { background: #DCDFC2; }
+div.c-grav {
 	float: left;
 	width: 80px;
 	margin: 0;
 	text-align: right;
 	}
-div.c-body{
+div.c-body {
 	float: right;
 	width: 464px;
 	}
 div.c-body p { margin-bottom: 10px; }
-div.c-head{
+div.c-head {
 	margin: 0 0 10px 0;
 	font-weight: bold;
 	font-size: 1.1em;
 	}
-div.c-date{
+div.c-date {
   float: right;
   color: #757575;
   font-size: .9em;
