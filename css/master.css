@@ -449,7 +449,7 @@ a#leavecomment { padding-left: 10px; }
 /*Body
 ---------------------------------------*/
 div.c-single, li.comment {
-	padding: 20px;
+	padding: 20px 20px 10px 20px;
 	border-top: 1px solid #ddd;
 	background: #efefef;
 	}
