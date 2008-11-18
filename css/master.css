@@ -448,18 +448,23 @@ ul li.widget ul#recentcomments li a {
 a#leavecomment { padding-left: 10px; }
 /*Body
 ---------------------------------------*/
-#comments, ol.commentlist { font-size: 1.3em; }
 div.c-single, li.comment {
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	background: #efefef;
 	}
+li.comment { padding: 20px 20px 0 20px; }
+li.comment.depth-2 {
+  margin-bottom: 10px;
+  border: 1px dashed #ccc;
+  background: #FDF7F7;
+  }
 ul.children {
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
   clear: both;
 	}
 div.alt, li.odd { background: #fff; }
-div.admin, li.bypostauthor, li.comment-author-admin { background: #DCDFC2; }
+div.admin, li.comment li.comment.bypostauthor, li.comment li.comment.comment-author-admin { background: #DCDFC2; }
 div.c-grav {
 	float: left;
 	width: 80px;
@@ -469,18 +474,17 @@ div.c-grav {
 div.c-body {
 	float: right;
 	width: 464px;
+  font-size: 1.3em;
 	}
 ul.children div.c-body { width: 404px; }
 div.c-body p { margin-bottom: 10px; }
 div.c-head {
 	margin: 0 0 10px 0;
 	font-weight: bold;
-	font-size: 1.1em;
 	}
 div.c-date {
   float: right;
   color: #757575;
-  font-size: .9em;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	}
@@ -494,7 +498,8 @@ div.c-date span {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	text-transform: uppercase;
   }
-
+div.reply, div.cancel-comment-reply { float: right; }
+div.reply { padding-bottom: 10px; }
 /*Form
 ---------------------------------------*/
 form#commentform { margin-bottom: 20px; }
@@ -502,7 +507,7 @@ form#commentform { margin-bottom: 20px; }
 h4#postcomment {
 	margin: 20px 0;
 	padding: 0 0 5px 0;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	color: #555;
 	border-bottom: 1px solid #ddd;
 	}

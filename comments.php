@@ -25,7 +25,7 @@ function legacy_comments($file) {
     <a id="leavecomment" href="#respond" title="<?php _e("Leave One"); ?>"> leave one &rarr;</a>
   </div><!--end comment-number-->
   <ol class="commentlist">
-    <?php wp_list_comments(array('callback' => 'custom_comment'));?>
+    <?php wp_list_comments('callback=custom_comment'); ?>
   </ol>
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -48,10 +48,10 @@ function legacy_comments($file) {
 <?php if ('open' == $post->comment_status) : ?>
   
   <div id="respond">
-    <h4 id="postcomment"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
     <div class="cancel-comment-reply">
       <small><?php cancel_comment_reply_link(); ?></small>
     </div>
+    <h4 id="postcomment"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
     <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
       <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to post a comment.</p> 
     <?php else : ?>
@@ -68,6 +68,7 @@ function legacy_comments($file) {
       <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>
       <?php do_action('comment_form', $post->ID); ?>
       <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></p>
+      <?php comment_id_fields(); ?>
     </form><!--end commentform-->
   </div><!--end respond-->
 
