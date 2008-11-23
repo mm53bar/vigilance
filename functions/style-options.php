@@ -62,6 +62,8 @@ ul li.widget ul li a:hover { background: url(../images/list-item.gif) no-repeat 
 #content .meta a:hover { color: #<?php echo $link_color; ?>; }
 #content .post-footer a:link, #content .post-footer a:visited { color: #333; }
 #content .c-permalink a:link, #content .c-permalink a:visited { color: #c1c1c1; }
+#content .reply a:link, #reply .c-permalink a:visited { color: #c1c1c1; }
+#content .reply a:hover { color: #<?php echo $link_color; ?>; }
 #footer a:link, #footer a:visited { color: #666; }
 #footer a:hover { color: #<?php echo $link_color; ?>; }
 <?php 

@@ -500,6 +500,10 @@ div.c-date span {
   }
 div.reply, div.cancel-comment-reply { float: right; }
 div.reply { padding-bottom: 10px; }
+div.reply a:link, div.reply a:visited {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+  }
 /*Form
 ---------------------------------------*/
 form#commentform { margin-bottom: 20px; }
