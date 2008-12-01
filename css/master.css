@@ -457,13 +457,13 @@ li.comment { padding: 20px 20px 0 20px; }
 li.comment.depth-2 {
   margin-bottom: 10px;
   border: 1px dashed #ccc;
-  background: #FDF7F7;
+  background: #fff;
   }
 ul.children {
 	margin: 10px 0 0 20px;
   clear: both;
 	}
-div.alt, li.odd { background: #fff; }
+div.alt, li.thread-odd { background: #fff; }
 div.admin, li.comment.bypostauthor, li.comment li.comment.bypostauthor, li.comment.comment-author-admin, li.comment li.comment.comment-author-admin { background: #DCDFC2; }
 div.c-grav {
 	float: left;
