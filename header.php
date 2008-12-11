@@ -6,6 +6,8 @@
 		<title><?php bloginfo('name'); ?> | <?php bloginfo('description');?></title>
 		<?php elseif( is_404() ) : ?>
 		<title>Page Not Found | <?php bloginfo('name'); ?></title>
+    <?php elseif( is_search() ) : ?>
+    <title><?php  print 'Search Results for ' . wp_specialchars($s); ?> | <?php bloginfo('name'); ?></title>
 		<?php else : ?>
 		<title><?php wp_title($sep = ''); ?> | <?php bloginfo('name');?></title>
 		<?php endif; ?>
