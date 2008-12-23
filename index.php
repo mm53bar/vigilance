@@ -7,7 +7,7 @@
 				<div class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
 				<div class="comments"><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></div>
 			</div><!--end post header-->
-			<div class="meta">
+			<div class="meta clear">
 				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
 				<div class="author">by <?php the_author() ?></div>
 			</div><!--end meta-->

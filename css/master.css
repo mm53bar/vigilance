@@ -199,6 +199,8 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 .meta a:hover { color: #772124; }
 .tags { 
 	float: right; 
+  width: 400px;
+  text-align: right;
 	font-style: italic;
 	}
 /*Post Body
