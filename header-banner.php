@@ -45,7 +45,7 @@ if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_state == 
 <?php //------Custom Code---------------------------------------------------------------------------------//
 if ($banner_state == 'Custom code') {?>
   <div id="menu">
-  	<?php echo $banner_custom; ?>
+  	<?php echo stripslashes($banner_custom); ?>
   </div><!--end menu-->
 <?php 
 } ?>
