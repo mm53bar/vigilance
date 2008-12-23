@@ -19,7 +19,7 @@
 			</div><!--end post footer-->
 		</div><!--end post-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-		<?php comments_template(); ?>
+		<?php comments_template('', true); ?>
 		<?php else : ?>
 		<?php endif; ?>
 	</div><!--end content-->

@@ -550,6 +550,20 @@ p.note {
 	font-style: italic;
 	font-size: 1.3em;
 	}
+/*Pingbacks/Trackbacks
+---------------------------------------*/
+h3.pinghead {
+  font-size: 1.3em;
+  color: #444444;
+  }
+ol.pinglist {
+  list-style-type: decimal;
+	list-style-position: inside;
+	margin: 0 0 10px 10px;
+  font-size: 1.3em;
+  }
+
+  
 /*Default Alignment and Images
 ------------------------------------------------------------ */
 .entry .alignleft img, .entry .alignright img, .entry .aligncenter img { border: 1px solid #ddd; }

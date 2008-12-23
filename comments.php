@@ -17,12 +17,18 @@
     <a id="leavecomment" href="#respond" title="<?php _e("Leave One"); ?>"> leave one &rarr;</a>
   </div><!--end comment-number-->
   <ol class="commentlist">
-    <?php wp_list_comments('callback=custom_comment'); ?>
+    <?php wp_list_comments('type=comment&callback=custom_comment'); ?>
   </ol>
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
+  <?php if ( ! empty($comments_by_type['pings']) ) : ?>
+    <h3 class="pinghead">Trackbacks &amp; Pingbacks</h3>
+    <ol class="pinglist">
+      <?php wp_list_comments('type=pings&callback=list_pings'); ?>
+    </ol>
+  <?php endif; ?>
  <?php else : // this is displayed if there are no comments so far ?>
   
 	<?php if ('open' == $post->comment_status) : ?>

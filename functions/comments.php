@@ -1,6 +1,16 @@
 <?php
-function custom_comment($comment, $args, $depth) {
-       $GLOBALS['comment'] = $comment;
+// Add filter to only count comments instead of comments + trackbacks/pingbacks
+add_filter('get_comments_number', 'comment_count', 0);
+function comment_count( $count ) {
+	global $id;
+	$comments_by_type = &separate_comments(get_comments('post_id=' . $id));
+	return count($comments_by_type['comment']);
+}
+?>
+<?php
+// Template for comments
+  function custom_comment($comment, $args, $depth) {
+  $GLOBALS['comment'] = $comment;
 ?>
       <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>" >
       <div class="c-grav"><?php echo get_avatar( get_comment_author_email(), '80' )?></div>
@@ -22,4 +32,11 @@ function custom_comment($comment, $args, $depth) {
           </div>
   				<?php edit_comment_link('edit','<p>','</p>'); ?>
         </div><!--end c-body-->
+<?php } ?>
+<?php
+// Template for pingbacks/trackbacks
+  function list_pings($comment, $args, $depth) {
+  $GLOBALS['comment'] = $comment;
+?>
+  <li id="comment-<?php comment_ID(); ?>"><?php comment_author_link(); ?>
 <?php } ?>
