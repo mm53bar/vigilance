@@ -1,13 +1,4 @@
 <?php
-// Add filter to only count comments instead of comments + trackbacks/pingbacks
-add_filter('get_comments_number', 'comment_count', 0);
-function comment_count( $count ) {
-	global $id;
-	$comments_by_type = &separate_comments(get_comments('post_id=' . $id));
-	return count($comments_by_type['comment']);
-}
-?>
-<?php
 // Template for comments
   function custom_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
