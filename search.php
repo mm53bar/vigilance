@@ -17,6 +17,7 @@
     <h1 class="pagetitle">Search Results for "<?php the_search_query(); ?>"</h1>
     <div class="entry">
       <p>Sorry your search for "<?php the_search_query(); ?>" did not turn up any results. Please try again.</p>
+      <?php include (TEMPLATEPATH . '/searchform.php'); ?>
     </div><!--end entry-->
 		<?php endif; ?>
 	</div><!--end content-->
