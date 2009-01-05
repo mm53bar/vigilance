@@ -59,7 +59,7 @@ if ($sideimg_state == 'Page and post specific' && $static_sideimg_status !== 'hi
 <?php //------Custom Code---------------------------------------------------------------------------------//
 if ($sideimg_state == 'Custom code') {?>
   <div id="sidebar-image">
-  	<?php echo $sideimg_custom; ?>
+  	<?php echo stripslashes($sideimg_custom); ?>
   </div><!--end sidebar-image-->
 <?php 
 } ?>

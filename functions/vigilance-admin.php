@@ -36,10 +36,16 @@ $options = array (
 						"desc" => "Your link hover color. Use Hex values and leave out the leading #.",
 					    "std" => "58181b",
 					    "type" => "text"),
+              
+        array(  "name" => "Exclude pages from header",
+              "id" => $shortname."_pages_to_exclude",
+              "desc" => "Page ID's you don't want displayed in your header navigation. Use a comma-delimited list, eg. 1,2,3",
+              "std" => "",
+              "type" => "text"),
          
-        array(	"name" => "Disable comment bubble & sidebar menu hover image",
+        array(	"name" => "Disable hover images",
 					    "id" => $shortname."_image_hover",
-						"desc" => "This is useful if you use your own link colors and you don't want the default red showing when a user hovers over the comments bubble or the sidebar menu items.",
+						"desc" => "This is useful if you use custom link colors and don't want the default red showing when a user hovers over the comments bubble or the sidebar menu items.",
 					    "std" => "false",
 					    "type" => "checkbox"),
               

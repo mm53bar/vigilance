@@ -6,7 +6,7 @@
         <h1><?php the_title(); ?></h1>
         <div id="single-date" class="date"><span><?php the_time('Y') ?></span> <?php the_time('F j') ?></div>
 			</div><!--end post header-->
-			<div class="meta">
+			<div class="meta clear">
 				<div class="tags"><?php the_tags('tags: ', ', ', ''); ?></div>
 				<div class="author">by <?php the_author() ?></div>
 			</div><!--end meta-->
@@ -19,7 +19,7 @@
 			</div><!--end post footer-->
 		</div><!--end post-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-		<?php comments_template(); ?>
+		<?php comments_template('', true); ?>
 		<?php else : ?>
 		<?php endif; ?>
 	</div><!--end content-->
