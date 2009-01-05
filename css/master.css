@@ -382,10 +382,18 @@ ul li.widget ul {
 	margin: 0;
 	font-size: 1.4em;
 	}
+ul li.widget ul li ul { 
+  margin-left: 5px;
+  font-size: 1em; 
+  }
 ul li.widget ul li {
-	border-bottom: 1px solid #dddddd;
 	padding: 6px 0;
+  border-bottom: 1px solid #dddddd;
 	}
+ul li.widget ul li ul li { 
+  padding: 6px 0 0 0;
+  border-bottom: none;
+  }
 ul li.widget ul li a {
 	padding: 0 0 0 14px;
 	background: url(../images/list-item.gif) no-repeat 0 .35em;
