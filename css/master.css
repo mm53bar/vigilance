@@ -226,6 +226,15 @@ code {
   font-family: "Courier New", Courier, monospace; 
   }
 blockquote {
+  display: block;
+  padding: 20px 20px 10px 45px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #141310;
+  background: #E7E6E2 url(../images/blockquote.gif) no-repeat top left;
+  }
+.float-quote {
 	float: left;
 	width: 200px;
 	padding: 15px;
@@ -234,13 +243,13 @@ blockquote {
 	border-top: 4px solid #333;
 	border-bottom: 4px solid #333;
 	}
-.entry blockquote p {
+.entry .float-quote p {
 	margin: 0;
 	padding: 0 0 0 40px;
 	font-size: 1.3em;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	line-height: 1.3em;
-	background: url(../images/blockquote.gif) no-repeat top left;
+	background: url(../images/float-quote.gif) no-repeat top left;
 	}
 .highlight-box {
 	float: right;
@@ -578,7 +587,7 @@ ol.pinglist {
 ------------------------------------------------------------ */
 .entry .alignleft img, .entry .alignright img, .entry .aligncenter img { border: 1px solid #ddd; }
 .noborder { border: none; }
-.entry .alignright, .entry .alignright blockquote { margin: 0 0 10px 10px; }
+.entry .alignright, .entry .alignright .float-quote { margin: 0 0 10px 10px; }
 .entry .alignleft, .entry .alignleft .highlight-box { margin: 0 10px 10px 0; }
 .wp-caption p {
   font-style: italic;
