@@ -232,7 +232,7 @@ blockquote {
   font-style: italic;
   font-size: 1.2em;
   color: #141310;
-  background: #E7E6E2 url(../images/blockquote.gif) no-repeat top left;
+  background: #e7e6e2 url(../images/blockquote.gif) no-repeat top left;
   }
 .float-quote {
 	float: left;
@@ -404,6 +404,7 @@ ul li.widget ul li ul li {
   border-bottom: none;
   }
 ul li.widget ul li a {
+  display: block;
 	padding: 0 0 0 14px;
 	background: url(../images/list-item.gif) no-repeat 0 .35em;
 	}
@@ -443,7 +444,7 @@ ul li.widget ul#recentcomments li a {
   border: 2px solid #acacac;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  background: #F4F4F4;
+  background: #f4f4f4;
   color: #888;
   }
 #search_form input:focus { background: #fff; }
@@ -582,7 +583,6 @@ ol.pinglist {
   font-size: 1.3em;
   }
 
-  
 /*Default Alignment and Images
 ------------------------------------------------------------ */
 .entry .alignleft img, .entry .alignright img, .entry .aligncenter img { border: 1px solid #ddd; }
