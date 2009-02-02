@@ -13,7 +13,7 @@
 		<?php endif; ?>
 
 	<!-- Basic Meta Data -->
-	<meta name="Copyright" content="Copyright 2008 Jestro LLC" />
+	<meta name="copyright" content="Vigilance Theme Design: Copyright 2008 - 2009 Jestro LLC" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<?php if((is_single() || is_category() || is_page() || is_home()) && (!is_paged())){} else {?>
