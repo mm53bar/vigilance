@@ -3,10 +3,45 @@ $themename = "Vigilance";
 $shortname = "V";
 $options = array (
 
-        array(	"name" => "Layout and Colors",
+        array(	"name" => "Custom Logo Image <a href=\"https://themes.jestro.com/members/signup.php\"><em>PRO Feature</em></a>",
+						"type" => "subhead"),
+        
+        array(	"name" => "Enable custom logo image",
+					    "id" => $shortname."_logo",
+						"desc" => "Check this box to use a custom logo.",
+					    "std" => "false",
+					    "type" => "checkbox"),
+        
+        array(  "name" => "Logo image file name",
+              "id" => $shortname."_logo_img",
+              "desc" => "Place your images in the <code>/wp-content/themes/vigilance/images</code> subdirectory",
+              "std" => "",
+              "type" => "text"),
+        
+        
+         array(  "name" => "Logo image ALT tag",
+              "id" => $shortname."_logo_img_alt",
+              "desc" => "An alt tag for your logo image. Important for SEO.",
+              "std" => "",
+              "type" => "text"),
+              
+        
+        
+         array(	"name" => "Navigation",
+						"type" => "subhead"),
+        
+        array(  "name" => "Exclude pages from header",
+              "id" => $shortname."_pages_to_exclude",
+              "desc" => "Page ID's you don't want displayed in your header navigation. Use a comma-delimited list, eg. 1,2,3",
+              "std" => "",
+              "type" => "text"),
+        
+        
+              
+         array(	"name" => "Color Scheme",
 						"type" => "subhead"),
             
-        array(	"name" => "Customize layout and colors",
+        array(	"name" => "Customize colors",
 						"desc" => "If enabled the theme will use the layouts and colors you choose below.",
 					    "id" => $shortname."_background_css",
 					    "std" => "Disabled",
@@ -36,12 +71,6 @@ $options = array (
 						"desc" => "Your link hover color. Use Hex values and leave out the leading #.",
 					    "std" => "58181b",
 					    "type" => "text"),
-              
-        array(  "name" => "Exclude pages from header",
-              "id" => $shortname."_pages_to_exclude",
-              "desc" => "Page ID's you don't want displayed in your header navigation. Use a comma-delimited list, eg. 1,2,3",
-              "std" => "",
-              "type" => "text"),
          
         array(	"name" => "Disable hover images",
 					    "id" => $shortname."_image_hover",
@@ -262,7 +291,7 @@ function mytheme_admin() {
 ?>
 <div class="wrap">
 <h2 class="updatehook" style=" padding-top: 20px; font-size: 2.8em;"><?php echo $themename; ?> Options</h2>
-<p style="line-height: 1.6em; font-size: 1.2em; width: 75%;">Welcome to the Vigilance Options menu. If you have any questions head on over to the <a href="http://themes.jestro.com/vigilance/">Vigilance Blog</a> and poke around. You can also check out the <a href="http://themes.jestro.com/vigilance/tutorials/">tutorials page</a> for an overview on how to use this menu. Vigilance was hand coded and brought to you by <a href="http://www.jestro.com/">Jestro</a>.</p>
+<p style="line-height: 1.6em; font-size: 1.2em; width: 75%;">Welcome to the Vigilance Options menu. If you have any questions or need support you can sign up for a <a href=\"http://themes.jestro.com/members/signup.php\">PRO Membership</a>. Vigilance was hand coded and brought to you by <a href="http://www.jestro.com/">Jestro</a>.</p>
 <form method="post">
 
 <table class="form-table">
@@ -274,7 +303,7 @@ function mytheme_admin() {
 		?>
 			</table>
 			
-			<h3><?php echo $value['name']; ?></h3>
+			<h3 style="padding-top: 15px;"><?php echo $value['name']; ?></h3>
 			
 			<table class="form-table">
 		<?php
@@ -284,7 +313,7 @@ function mytheme_admin() {
 		?>
 		        <input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?>" />
 		<?php
-		option_wrapper_footer($value);
+		option_wrapper_footer_nobreak($value);
 		break;
 		
 		case 'select':
@@ -335,7 +364,7 @@ function mytheme_admin() {
 		<?php 
 		}
 		 
-		option_wrapper_footer($value);
+		option_wrapper_footer_nobreak($value);
 		break;
 		
 		case "checkbox":
@@ -348,7 +377,7 @@ function mytheme_admin() {
 					?>
 		            <input type="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />
 		<?php
-		option_wrapper_footer($value);
+		option_wrapper_footer_nobreak($value);
 		break;
 
 		default:
@@ -383,7 +412,14 @@ function option_wrapper_header($values){
 }
 function option_wrapper_footer($values){
 	?>
-		<br /><br />
+		<br />
+		<?php echo $values['desc']; ?>
+	    </td>
+	</tr>
+	<?php 
+}
+function option_wrapper_footer_nobreak ($values){
+	?>
 		<?php echo $values['desc']; ?>
 	    </td>
 	</tr>
