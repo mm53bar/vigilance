@@ -14,7 +14,9 @@
 <?php if ( have_comments() ) : ?>
   <div class="comment-number">
     <span><?php comments_number('No Responses', 'One Response', '% Responses' );?></span>
+  <?php if ('open' == $post->comment_status) : ?>
     <a id="leavecomment" href="#respond" title="<?php _e("Leave One"); ?>"> leave one &rarr;</a>
+  <?php endif; ?>
   </div><!--end comment-number-->
   <ol class="commentlist">
     <?php wp_list_comments('type=comment&callback=custom_comment'); ?>
@@ -29,8 +31,10 @@
       <?php wp_list_comments('type=pings&callback=list_pings'); ?>
     </ol>
   <?php endif; ?>
- <?php else : // this is displayed if there are no comments so far ?>
-  
+  <?php if ('closed' == $post->comment_status) : ?>
+    <p class="note">Comments are closed for this entry.</p>
+  <?php endif; ?>
+<?php else : // this is displayed if there are no comments so far ?> 
 	<?php if ('open' == $post->comment_status) : ?>
 		<!-- If comments are open, but there are no comments. -->
     <div class="comment-number">
