@@ -84,7 +84,7 @@ $options = array (
 						"type" => "subhead"),
 
 				array(	"name" => "Banner state",
-						"desc" => "Place your images in the <code>/wp-content/themes/vigilance/images/top-banner</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/vigilance/tutorials/#options-banner\">Read this for page and post specific images.</a>",
+						"desc" => "Place your images in the <code>/wp-content/themes/vigilance/images/top-banner</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/tutorials/vigilance.htm#options-banner\">Read this for page and post specific images.</a>",
 			    		"id" => $shortname."_banner_state",
 			    		"std" => "Rotating images",
 			    		"type" => "select",
@@ -153,7 +153,7 @@ $options = array (
 						"type" => "subhead"),
 
 				array(	"name" => "Image state",
-						"desc" => "Place your images in the <code>/wp-content/themes/vigilance/images/sidebar</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/vigilance/tutorials/#options-banner\">Read this for page and post specific images.</a>",
+						"desc" => "Place your images in the <code>/wp-content/themes/vigilance/images/sidebar</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/tutorials/vigilance.htm#options-banner\">Read this for page and post specific images.</a>",
 			    		"id" => $shortname."_sideimg_state",
 			    		"std" => "Rotating images",
 			    		"type" => "select",
