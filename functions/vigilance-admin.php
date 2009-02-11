@@ -293,7 +293,7 @@ function mytheme_admin() {
 ?>
 <div class="wrap">
 <h2 class="updatehook" style=" padding-top: 20px; font-size: 2.8em;"><?php echo $themename; ?> Options</h2>
-<p style="line-height: 1.6em; font-size: 1.2em; width: 75%;">Welcome to the Vigilance Options menu. If you have any questions or need support you can sign up for a <a href=\"http://themes.jestro.com/members/signup.php\">PRO Membership</a>. Vigilance was hand coded and brought to you by <a href="http://www.jestro.com/">Jestro</a>.</p>
+<p style="line-height: 1.6em; font-size: 1.2em; width: 75%;">Welcome to the Vigilance Options menu. If you have any questions or need support you can sign up for a <a href="https://themes.jestro.com/members/signup.php">PRO Membership</a>. Vigilance was hand coded and brought to you by <a href="http://www.jestro.com/">Jestro</a>.</p>
 <form method="post">
 
 <table class="form-table">
