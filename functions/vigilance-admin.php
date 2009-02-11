@@ -17,17 +17,21 @@ $options = array (
               "desc" => "Place your images in the <code>/wp-content/themes/vigilance/images</code> subdirectory",
               "std" => "",
               "type" => "text"),
-        
-        
-         array(  "name" => "Logo image ALT tag",
+            
+        array(  "name" => "Logo image ALT tag",
               "id" => $shortname."_logo_img_alt",
               "desc" => "An alt tag for your logo image. Important for SEO.",
               "std" => "",
               "type" => "text"),
               
+        array( "name" => "Display tagline",
+					    "id" => $shortname."_tagline",
+						"desc" => "Check this box to show your tagline below your logo.",
+					    "std" => "false",
+					    "type" => "checkbox"),
+                     
         
-        
-         array(	"name" => "Navigation",
+        array(	"name" => "Navigation",
 						"type" => "subhead"),
         
         array(  "name" => "Exclude pages from header",
@@ -35,10 +39,8 @@ $options = array (
               "desc" => "Page ID's you don't want displayed in your header navigation. Use a comma-delimited list, eg. 1,2,3",
               "std" => "",
               "type" => "text"),
-        
-        
               
-         array(	"name" => "Color Scheme",
+        array(	"name" => "Color Scheme",
 						"type" => "subhead"),
             
         array(	"name" => "Customize colors",
