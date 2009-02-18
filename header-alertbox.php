@@ -7,7 +7,7 @@
 <?php
 if ($alertbox_state == 'On') {?>
   <div class="alert-box entry">
-    <h2><?php echo $alertbox_title; ?></h2>
+    <h2><?php echo stripslashes($alertbox_title); ?></h2>
     <?php echo stripslashes($alertbox_content); ?>
   </div><!--end alert-box-->
 <?php 
