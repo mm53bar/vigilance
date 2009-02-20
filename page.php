@@ -7,6 +7,7 @@
         <?php edit_post_link('Edit This','<p>','</p>'); ?>
 			</div><!--end entry-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+    <?php comments_template('', true); ?>
 		<?php else : ?>
 		<?php endif; ?>
 	</div><!--end content-->

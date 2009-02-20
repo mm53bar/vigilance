@@ -31,8 +31,8 @@
       <?php wp_list_comments('type=pings&callback=list_pings'); ?>
     </ol>
   <?php endif; ?>
-  <?php if ('closed' == $post->comment_status) : ?>
-    <p class="note">Comments are closed for this entry.</p>
+  <?php if ('closed' == $post->comment_status ) : ?>
+    <p class="note">Comments are closed.</p>
   <?php endif; ?>
 <?php else : // this is displayed if there are no comments so far ?> 
 	<?php if ('open' == $post->comment_status) : ?>
@@ -42,7 +42,9 @@
     </div>
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="note">Comments are closed for this entry.</p>
+    <?php if (!is_page()) : ?>
+      <p class="note">Comments are closed.</p>
+    <?php endif; ?>
 	<?php endif; ?>
 <?php endif; ?>
 
