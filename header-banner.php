@@ -14,7 +14,7 @@
 <?php //-----Rotating Image---------------------------------------------------------------------------------//
 if ($banner_state == 'Rotating images') {?>
   <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo $banner_alt; else echo bloginfo('name'); ?>"/>
+  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo stripslashes($banner_alt); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
 <?php 
 } ?>
@@ -22,7 +22,7 @@ if ($banner_state == 'Rotating images') {?>
 <?php //-----Static Image---------------------------------------------------------------------------------//
 if ($banner_state == 'Static image' && $banner_url !== '') {?>
   <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_url; ?>" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo $banner_alt; else echo bloginfo('name'); ?>"/>
+  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_url; ?>" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo stripslashes($banner_alt); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
 <?php 
 } ?>
@@ -30,14 +30,14 @@ if ($banner_state == 'Static image' && $banner_url !== '') {?>
 <?php //-----Page and Post Specific---------------------------------------------------------------------------------//
 if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_state == 'Page and post specific' && $static_banner_status !=='hidden') {?>
   <div id="menu">
-    <img src="<?php echo $static_banner_url; ?>" width="596" height="<?php if ($static_banner_height !== '') echo $static_banner_height; else echo $banner_height; ?>" alt="<?php if ($static_banner_alt !== '') echo $static_banner_alt; else echo the_title(); ?>"/>
+    <img src="<?php echo $static_banner_url; ?>" width="596" height="<?php if ($static_banner_height !== '') echo $static_banner_height; else echo $banner_height; ?>" alt="<?php if ($static_banner_alt !== '') echo stripslashes($static_banner_alt); else echo the_title(); ?>"/>
    </div><!--end menu-->				
 <?php 
 } ?>
 
 <?php if ($banner_state == 'Page and post specific' && $banner_home !== '' && is_home()) {?>
   <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo $banner_alt; else echo bloginfo('name'); ?>"/>
+  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo stripslashes($banner_alt); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
 <?php 
 } ?>

@@ -18,7 +18,7 @@ if ($sideimg_state == 'Rotating images') {?>
   	<?php if ($sideimg_link !== '') {?>
       <a href="<?php echo $sideimg_link; ?>">
     <?php } ?>
-    <img src="<?php bloginfo('template_url'); ?>/images/sidebar/rotate.php" width="300" height="<?php echo $sideimg_height; ?>" alt="<?php if ($sideimg_alt !== '') echo $sideimg_alt; else echo bloginfo('name'); ?>"/>
+    <img src="<?php bloginfo('template_url'); ?>/images/sidebar/rotate.php" width="300" height="<?php echo $sideimg_height; ?>" alt="<?php if ($sideimg_alt !== '') echo stripslashes($sideimg_alt); else echo bloginfo('name'); ?>"/>
     <?php if ($sideimg_link !== '') {?>
       </a>
     <?php } ?>
@@ -32,7 +32,7 @@ if ($sideimg_state == 'Static image' && $sideimg_url !== '') {?>
     <?php if ($sideimg_link !== '') {?>
       <a href="<?php echo $sideimg_link; ?>">
     <?php } ?>
-  		<img src="<?php bloginfo('template_url'); ?>/images/sidebar/<?php echo $sideimg_url; ?>" width="300" height="<?php echo $sideimg_height; ?>" alt="<?php if ($sideimg_alt !== '') echo $sideimg_alt; else echo bloginfo('name'); ?>"/>
+  		<img src="<?php bloginfo('template_url'); ?>/images/sidebar/<?php echo $sideimg_url; ?>" width="300" height="<?php echo $sideimg_height; ?>" alt="<?php if ($sideimg_alt !== '') echo stripslashes($sideimg_alt); else echo bloginfo('name'); ?>"/>
     <?php if ($sideimg_link !== '') {?>
       </a>
     <?php } ?>
@@ -47,7 +47,7 @@ if ($sideimg_state == 'Page and post specific' && $static_sideimg_status !== 'hi
       <a href="<?php echo $static_sideimg_link; ?>">
       <?php } ?>
         <?php if (is_single() || is_page() && $static_sideimg_url !== '') { ?>
-        <img src="<?php echo $static_sideimg_url; ?>" width="300" height="<?php if ($static_sideimg_height !== '') echo $static_sideimg_height; else echo $sideimg_height; ?>" alt="<?php if ($static_sideimg_alt !== '') echo $static_sideimg_alt; else echo the_title(); ?>"/>
+        <img src="<?php echo $static_sideimg_url; ?>" width="300" height="<?php if ($static_sideimg_height !== '') echo $static_sideimg_height; else echo $sideimg_height; ?>" alt="<?php if ($static_sideimg_alt !== '') echo stripslashes($static_sideimg_alt); else echo the_title(); ?>"/>
         <?php } ?>
       <?php if ($static_sideimg_link !== '') {?>
       </a>
