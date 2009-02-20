@@ -236,7 +236,7 @@ blockquote {
   }
 .float-quote {
 	float: left;
-	width: 200px;
+	width: 300px;
 	padding: 15px;
 	margin: 10px 10px 0 0;
 	background: #eaeaea;
@@ -246,7 +246,7 @@ blockquote {
 .entry .float-quote p {
 	margin: 0;
 	padding: 0 0 0 40px;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	line-height: 1.3em;
 	background: url(../images/float-quote.gif) no-repeat top left;
