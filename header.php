@@ -47,7 +47,7 @@
 		</div><!--end description-->
 		<div id="nav">
 			<ul>
-				<li class="page_item <?php if (is_home()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>">Home</a></li>
+				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>">Home</a></li>
         <?php $exclude_pages = get_option('V_pages_to_exclude'); ?>
         <?php wp_list_pages('depth=1&title_li=&exclude=' . $exclude_pages); ?>
 			</ul>
