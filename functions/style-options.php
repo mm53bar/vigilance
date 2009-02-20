@@ -42,8 +42,8 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 #footer a:hover { color: #<?php echo $link_color; ?>; }
 /*Hover 
 ------------------------------------------------------------ */
-a:hover { color: #<?php echo $hover_color; ?>; }
-
+#content .entry a:hover { color: #<?php echo $hover_color; ?>; }
+#wrapper #sidebar a:hover { color: #<?php echo $hover_color; ?>; }
   <?php if ($image_hover == 'true') { ?>
 /*Hide hover colors on comment images and sidebar menu images
 ------------------------------------------------------------ */
