@@ -219,12 +219,20 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
   padding-top: 10px;
   font-size: .9em;
   }
-code {
-  padding: 3px;
-  background: #E9EBD9;
+pre {
+  margin: 10px 0;
+  padding: 1em 10px;
+  overflow: auto;
+  background-color: #E9EBD9;
   color: #000;
-  font-family: "Courier New", Courier, monospace; 
   }
+code { 
+  padding: 2px 3px;
+  font: 1.1em Consolas, Courier New, sans-serif;
+  background-color: #E9EBD9;
+  color: #000;
+  }
+pre code { font-size: 1.3em; }
 blockquote {
   display: block;
   padding: 20px 20px 10px 45px;
