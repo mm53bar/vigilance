@@ -412,10 +412,10 @@ ul li.widget ul li ul li {
 ul li.widget ul li a {
   display: block;
 	padding: 0 0 0 14px;
-	background: url(../images/list-item.gif) no-repeat 0 50%;
+	background: url(../images/list-item.gif) no-repeat 0 .5em;
 	}
 ul li.widget ul li a:hover {
-	background: url(../images/list-item-hover.gif) no-repeat 0 50%;
+	background: url(../images/list-item-hover.gif) no-repeat 0 .5em;
 	}
 ul li.widget ul#recentcomments li a {
 	padding: 0;
