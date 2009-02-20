@@ -13,6 +13,7 @@
 			<div class="entry clear">
 				<?php the_content(); ?>
         <?php edit_post_link('Edit This','<p>','</p>'); ?>
+        <?php wp_link_pages(); ?>
 			</div><!--end entry-->
 			<div class="post-footer">
 				<p>from &rarr; <?php the_category(', ') ?></p>

@@ -5,6 +5,7 @@
 			<div class="entry page clear">
 				<?php the_content(); ?>
         <?php edit_post_link('Edit This','<p>','</p>'); ?>
+        <?php wp_link_pages(); ?>
 			</div><!--end entry-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
     <?php comments_template('', true); ?>
