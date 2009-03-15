@@ -35,7 +35,7 @@ if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_state == 
 <?php 
 } ?>
 
-<?php if ($banner_state == 'Page and post specific' && $banner_home !== '' && is_home()) {?>
+<?php if ($banner_state == 'Page and post specific' && $banner_home !== '' && is_front_page()) {?>
   <div id="menu">
   	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo $banner_height; ?>" alt="<?php if ($banner_alt !== '') echo stripslashes($banner_alt); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
