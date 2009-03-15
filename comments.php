@@ -10,7 +10,7 @@
 	}
 ?>
 <!-- You can start editing here. -->
-
+<div id="comments">
 <?php if ( have_comments() ) : ?>
   <div class="comment-number">
     <span><?php comments_number('No Responses', 'One Response', '% Responses' );?></span>
@@ -47,7 +47,7 @@
     <?php endif; ?>
 	<?php endif; ?>
 <?php endif; ?>
-
+</div><!--end comments-->
 
 <?php if ('open' == $post->comment_status) : ?>
   

@@ -268,7 +268,7 @@ blockquote {
 	background: #772124;
 	color: #fff;
 	}
-.highlight-box a:link, a:visited {
+.highlight-box a:link, .highlight-box a:visited {
 	color: #fff;
 	text-decoration: underline;
 }
@@ -288,25 +288,25 @@ blockquote {
  color: #fff; 
  }
 .highlight-box h2 { text-transform: uppercase; }
-.entry ul, #comments ul {
+.entry ul, .c-body ul {
 	margin: 0 0 10px 10px;
 	}
-.entry ul li, #comments ul li {
+.entry ul li, .c-body ul li {
 	display: block;
 	margin: 5px 0 0 0;
 	padding: 0 0 0 17px;
 	background: url(../images/list-star.gif) no-repeat 0 .3em;
 	}
-.entry ol, #comments ol {
+.entry ol, .c-body ol {
 	list-style-type: decimal;
 	list-style-position: inside;
 	margin: 0 0 10px 10px;
 	}
-.entry ol li ol li, #comments ol li ol li { 
+.entry ol li ol li, .c-body ol li ol li { 
     font-size: .9em;
     list-style-type: lower-roman; 
     }
-.entry ol li, #comments ol li {
+.entry ol li, .c-body ol li {
 	margin: 5px 0 0 0;
 	}
 .navigation {
