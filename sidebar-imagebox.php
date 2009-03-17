@@ -13,7 +13,7 @@
 ?> 
 
 <?php //------Rotating Images---------------------------------------------------------------------------------//
-if ($sideimg_state == 'Rotating images') {?>
+if ($sideimg_state == 'Rotating images' || $sideimage_state == '') {?>
 	<div id="sidebar-image">
   	<?php if ($sideimg_link !== '') {?>
       <a href="<?php echo $sideimg_link; ?>">

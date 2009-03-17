@@ -3,22 +3,45 @@
   $feed_state = get_option('V_feed_state');
 ?>
 	<div id="sidebar">
-  	<?php if ($sideimg_state !== 'Do not show an image') {?>
+  	<?php if ($sideimg_state == 'Do not show an image') : else : ?>
   		<?php include (TEMPLATEPATH . '/sidebar-imagebox.php'); ?>
-  	<?php } ?>
-    <?php if ($feed_state == 'Enabled') {?>
+  	<?php endif; ?>
+    <?php if ($feed_state == 'Disabled') : else : ?>
   		<?php include (TEMPLATEPATH . '/sidebar-feedbox.php'); ?>
-  	<?php } ?>
+  	<?php endif; ?>
   	<ul>
   		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Wide Sidebar') ) : ?>
+				<li class="widget widget_recent_entries">
+					<h2 class="widgettitle"><?php _e('Recent Articles'); ?></h2>
+					<ul>
+						<?php $side_posts = get_posts('numberposts=10'); foreach($side_posts as $post) : ?>
+						<li><a href= "<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<?php endforeach; ?>
+					</ul>
+				</li>		
   		<?php endif; ?>
   	</ul>
   	<ul class="thin-sidebar spad">
   		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Left Sidebar') ) : ?>
+				<li class="widget widget_archive">
+					<h2 class="widgettitle"><?php _e('Archives'); ?></h2>
+					<ul>
+						<?php wp_get_archives('type=monthly'); ?>
+					</ul>
+				</li>
   		<?php endif; ?>
   	</ul>
   	<ul class="thin-sidebar">
   		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Right Sidebar') ) : ?>
+				<li class="widget widget_search">
+					<h2 class="widgettitle">Search</h2>
+					<form method="get" id="search_form" action="<?php bloginfo('home'); ?>/">
+						<div>
+					    <input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}" />
+					    <input type="hidden" value="Search" />
+					  </div>
+					</form>
+				</li>
   		<?php endif; ?>
   	</ul>
 	</div><!--end sidebar-->
