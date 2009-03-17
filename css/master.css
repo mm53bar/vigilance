@@ -404,15 +404,17 @@ ul li.widget ul li ul {
   margin-left: 5px;
   font-size: 1em; 
   }
-ul li.widget ul li { border-bottom: 1px solid #dddddd; }
+ul li.widget ul li { 
+	padding: 8px 0 6px 0;
+	border-bottom: 1px solid #dddddd; 
+	}
 ul li.widget ul li ul li { border-bottom: none; }
 ul li.widget ul li a {
-	line-height: 2.5em;
   display: block;
 	padding: 0 0 0 14px;
-	background: url(../images/list-item.gif) no-repeat 0 .9em;
+	background: url(../images/list-item.gif) no-repeat 0 .45em;
 	}
-ul li.widget ul li a:hover { background: url(../images/list-item-hover.gif) no-repeat 0 .9em; }
+ul li.widget ul li a:hover { background: url(../images/list-item-hover.gif) no-repeat 0 .45em; }
 ul li.widget ul#recentcomments li a {
 	padding: 0;
 	background: none;
