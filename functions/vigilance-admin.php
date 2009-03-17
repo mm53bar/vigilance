@@ -226,6 +226,19 @@ $options = array (
 						"type" => "textarea",
 						"options" => array("rows" => "2",
 										   "cols" => "80") ),
+
+			array( "name" => "Enable Twitter",
+			    "id" => $shortname."_twitter_toggle",
+				  "desc" => "Hip to Twitter? Check this box.",
+			    "std" => "",
+			    "type" => "checkbox"),
+										
+			array(	"name" => "Twitter updates link",
+					"id" => $shortname."_twitter",
+					"desc" => "Enter your twitter link here.",
+					"type" => "textarea",
+					"options" => array("rows" => "2",
+									   "cols" => "80") ),		
 				
         array(	"name" => "Footer",
 						"type" => "subhead"),
