@@ -35,14 +35,14 @@ a:hover {
 /*Basic Structure
 ------------------------------------------------------------ */
 #wrapper{
-	width: 920px;
+	width: 930px;
 	margin: 0 auto;
 	text-align: left;
 	}
 #content{ 
 	float: left; 
 	width: 600px;
-	padding: 20px 20px 20px 0;
+	padding: 20px 30px 20px 0;
 	}
 #sidebar { 
 	float: right; 

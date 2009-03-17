@@ -17,7 +17,7 @@ header("Content-type: text/css");
 body { background: #<?php echo $background_color; ?>; }
 #wrapper{
 	background: #fff;
-	padding: 0 20px 10px 20px;
+	padding: 0 30px 10px 30px;
 	border-left: 4px solid #<?php echo $border_color; ?>;
 	border-right: 4px solid #<?php echo $border_color; ?>;
 	}
