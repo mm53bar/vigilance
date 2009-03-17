@@ -42,7 +42,7 @@ a:hover {
 #content{ 
 	float: left; 
 	width: 600px;
-	padding: 20px 30px 20px 0;
+	padding: 30px 30px 20px 0;
 	}
 #sidebar { 
 	float: right; 
@@ -386,9 +386,7 @@ img.archive-comment {
 	}	
 /*Sidebar
 ------------------------------------------------------------ */
-#sidebar-image { 
-  padding-top: 20px; 
-  }
+#sidebar-image { padding-top: 30px; }
 h2.widgettitle {
 	padding: 25px 0 3px 0;
 	font-size: 1.4em;
