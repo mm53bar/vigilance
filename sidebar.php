@@ -26,7 +26,7 @@
   		<?php endif; ?>
   	</ul>
   	<ul class="thin-sidebar">
-  		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Right Sidebar') ) : ?>
+  		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Sidebar') ) : ?>
   		<?php endif; ?>
   	</ul>
 	</div><!--end sidebar-->
