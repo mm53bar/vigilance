@@ -22,26 +22,11 @@
   		<?php endif; ?>
   	</ul>
   	<ul class="thin-sidebar spad">
-  		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Left Sidebar') ) : ?>
-				<li class="widget widget_archive">
-					<h2 class="widgettitle"><?php _e('Archives'); ?></h2>
-					<ul>
-						<?php wp_get_archives('type=monthly'); ?>
-					</ul>
-				</li>
+  		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Sidebar') ) : ?>	
   		<?php endif; ?>
   	</ul>
   	<ul class="thin-sidebar">
   		<?php if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar('Right Sidebar') ) : ?>
-				<li class="widget widget_search">
-					<h2 class="widgettitle">Search</h2>
-					<form method="get" id="search_form" action="<?php bloginfo('home'); ?>/">
-						<div>
-					    <input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}" />
-					    <input type="hidden" value="Search" />
-					  </div>
-					</form>
-				</li>
   		<?php endif; ?>
   	</ul>
 	</div><!--end sidebar-->
