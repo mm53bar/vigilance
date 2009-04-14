@@ -7,8 +7,8 @@
 <?php
 if ($alertbox_state == 'On') {?>
   <div class="alert-box entry">
-    <h2><?php echo stripslashes($alertbox_title); ?></h2>
-    <?php echo stripslashes($alertbox_content); ?>
+    <h2><?php echo stripslashes(wp_filter_post_kses($alertbox_title)); ?></h2>
+    <?php echo stripslashes(wp_filter_post_kses($alertbox_content)); ?>
   </div><!--end alert-box-->
 <?php 
 } ?>
