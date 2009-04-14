@@ -126,9 +126,9 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 .alert-box {
   margin: 0 0 20px 0;
   padding: 0 20px;
-  background: #E9EBD9;
-	border-top: 2px solid #DCDFC3;
-	border-bottom: 2px solid #DCDFC3;
+  background: #EAE9E5;
+	border-top: 2px solid #E3E1DB;
+	border-bottom: 2px solid #E3E1DB;
   }
 .alert-box h2, .alert-box h3, .alert-box h4 {
   margin: 0;
