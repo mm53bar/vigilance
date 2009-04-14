@@ -221,8 +221,8 @@ $options = array (
         
         array(	"name" => "<a href=\"http://www.feedburner.com\">Feedburner</a> email updates link",
 						"id" => $shortname."_feed_email",
-						"desc" => "Enter your feed email link here. <strong>Do not paste the entire link code, just the URL.</strong><br /><del>&#60;a href=&#34;</del> <code>http://www.feedburner.com/fb/a/emailverifySubmit?feedId=000000&amp;loc=en_US</code> <del>&#34;&#62;Subscribe to Your Feed by Email&#60;/a&#62;</del>",
-						"std" => "http://www.feedburner.com/fb/a/emailverifySubmit?feedId=YOURFEEDID&loc=en_US",
+						"desc" => "Enter your feed email link here. <strong>Do not paste the entire link code, just the URL.</strong><br /><del>&#60;a href=&#34;</del> <code>http://feedburner.google.com/fb/a/mailverify?uri=YOURFEEDID&amp;loc=en_US</code> <del>&#34;&#62;Subscribe to Your Feed by Email&#60;/a&#62;</del>",
+						"std" => "http://feedburner.google.com/fb/a/mailverify?uri=YOURFEEDID&loc=en_US",
 						"type" => "textarea",
 						"options" => array("rows" => "2",
 										   "cols" => "80") ),
