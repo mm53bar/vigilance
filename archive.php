@@ -15,7 +15,7 @@
 		<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 		<h1 class="pagetitle">Blog Archives</h1>
 		<?php } ?>
-    <img class="archive-comment"src="<?php bloginfo('template_url'); ?>/images/comments-bubble.gif" width="17" height="14" alt="Comments"/>
+    <img class="archive-comment" src="<?php bloginfo('template_url'); ?>/images/comments-bubble.gif" width="17" height="14" alt="Comments"/>
 		<?php while (have_posts()) : the_post(); ?>
     <div class="entries">
       <ul>

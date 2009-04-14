@@ -71,9 +71,13 @@
       <p><label for="comment" class="comment-field"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
       <p class="guidelines"><strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published.</p>
       <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>
-      <?php do_action('comment_form', $post->ID); ?>
+			<div>
+      	<?php do_action('comment_form', $post->ID); ?>
+			</div>
       <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></p>
-      <?php comment_id_fields(); ?>
+			<div>
+      	<?php comment_id_fields(); ?>
+			</div>
     </form><!--end commentform-->
   </div><!--end respond-->
 
