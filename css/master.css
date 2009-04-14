@@ -161,12 +161,12 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 .comments a {
 	display: block;
 	color: #757575;
-	padding: 0 0 0 26px;
-	background: url(../images/comments-bubble.gif) no-repeat 0 .4em;
+	padding: 0 0 0 25px;
+	background: url(../images/comments-bubble.gif) no-repeat 0 6px;
 	}
 .comments a:hover {
 	color: #772124;
-	background: url(../images/comments-bubble-hover.gif) no-repeat 0 .4em;
+	background: url(../images/comments-bubble.gif) no-repeat 0 -22px;
 	}
 .date {
 	float: right;
