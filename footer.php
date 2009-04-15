@@ -6,7 +6,7 @@
 <?php
 	$tmp_stats_code = get_option('V_stats_code');
 	if($tmp_stats_code != ''){
-		echo stripslashes(wp_filter_post_kses($tmp_stats_code));
+		echo stripslashes($tmp_stats_code);
 	}
 ?>
 </body>
