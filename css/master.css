@@ -387,6 +387,11 @@ img.archive-comment {
 /*Sidebar
 ------------------------------------------------------------ */
 #sidebar-image { padding-top: 20px; }
+#sidebar-image { font-size: 1.2em; } 
+#sidebar-image p { 
+	margin-bottom: 15px; 
+	line-height: 1.6em;
+	}
 h2.widgettitle {
 	padding: 25px 0 3px 0;
 	font-size: 1.4em;
