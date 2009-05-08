@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 		<?php if (have_posts()) : ?>
 		<h1 class="pagetitle">Search Results for "<?php the_search_query(); ?>"</h1>
-		<img class="archive-comment"src="<?php bloginfo('template_url'); ?>/images/comments-bubble.gif" width="17" height="14" alt="Comments"/>
+		<img class="archive-comment"src="<?php bloginfo('template_url'); ?>/images/comments-bubble-2.gif" width="17" height="14" alt="Comments"/>
 		<?php while (have_posts()) : the_post(); ?>
     <div class="entries">
       <ul>
