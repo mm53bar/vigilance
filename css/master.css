@@ -392,10 +392,6 @@ img.archive-comment {
 	margin-bottom: 15px; 
 	line-height: 1.6em;
 	}
-div.textwidget p {
-	font-size: 1.3em;
-	margin: 10px 0 0 0;
-}
 h2.widgettitle {
 	padding: 25px 0 3px 0;
 	font-size: 1.4em;
@@ -428,6 +424,11 @@ ul li.widget ul#recentcomments li a {
 	padding: 0;
 	background: none;
 	}
+div.textwidget p {
+	font-size: 1.3em;
+	margin: 10px 0 0 0;
+}
+li.widget select { margin: 15px 0 0 0;}
 /*RSS Box
 ---------------------------------------*/
 #rss-feed  { padding-top: 10px; }
