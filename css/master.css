@@ -428,7 +428,7 @@ div.textwidget p {
 	font-size: 1.3em;
 	margin: 10px 0 0 0;
 }
-li.widget select { margin: 15px 0 0 0;}
+li.widget select { margin-top: 10px; }
 /*RSS Box
 ---------------------------------------*/
 #rss-feed  { padding-top: 10px; }
