@@ -11,4 +11,7 @@ function legacy_comments($file) {
 	if(!function_exists('wp_list_comments')) 	$file = TEMPLATEPATH . '/legacy.comments.php';
 	return $file;
 }
+
+//Text Domain
+load_theme_textdomain('vigilance');
 ?>

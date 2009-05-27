@@ -4,7 +4,7 @@
 		die ('Please do not load this page directly. Thanks!');
 
 	if ( post_password_required() ) { ?>
-		<p class="nocomments">This post is password protected. Enter the password to view comments.</p>
+		<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'vigilance') ?></p>
 	<?php
 		return;
 	}
@@ -13,9 +13,9 @@
 <div id="comments">
 <?php if ( have_comments() ) : ?>
   <div class="comment-number">
-    <span><?php comments_number('No Responses', 'One Response', '% Responses' );?></span>
+    <span><?php comments_number( __('No Responses', 'vigilance'), __('One Response', 'vigilance'), __('% Responses', 'vigilance')) ?></span>
   <?php if ('open' == $post->comment_status) : ?>
-    <a id="leavecomment" href="#respond" title="<?php _e("Leave One"); ?>"> leave one &rarr;</a>
+    <a id="leavecomment" href="#respond" title="<?php _e("Leave One"); ?>"><?php _e("leave one &rarr;"); ?></a>
   <?php endif; ?>
   </div><!--end comment-number-->
   <ol class="commentlist">
