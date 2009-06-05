@@ -5,7 +5,7 @@
 		<?php if( is_front_page() ) : ?>
 		<title><?php bloginfo('name'); ?> | <?php bloginfo('description');?></title>
 		<?php elseif( is_404() ) : ?>
-		<title>Page Not Found | <?php bloginfo('name'); ?></title>
+		<title><?php _e('Page Not Found |', 'vigilance') ?> <?php bloginfo('name'); ?></title>
     <?php elseif( is_search() ) : ?>
     <title><?php  print 'Search Results for ' . wp_specialchars($s); ?> | <?php bloginfo('name'); ?></title>
 		<?php else : ?>
@@ -47,7 +47,7 @@
 		</div><!--end description-->
 		<div id="nav">
 			<ul>
-				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>">Home</a></li>
+				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>"><?php _e('Home', 'vigilance') ?></a></li>
         <?php $exclude_pages = get_option('V_pages_to_exclude'); ?>
         <?php wp_list_pages('depth=1&title_li=&exclude=' . $exclude_pages); ?>
 			</ul>
