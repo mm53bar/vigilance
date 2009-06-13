@@ -1,0 +1,670 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Vigilance WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-12 20:55-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Drew Strojny <themes@jestro.com>\n"
+"Language-Team: Jestro <themes@jestro.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance\n"
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/404.php:2
+msgid "404: Page Not Found"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/404.php:4
+msgid "We are terribly sorry, but the URL you typed no longer exists. It might have been moved or deleted, or perhaps you mistyped it. We suggest searching the site:"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:4
+#, php-format
+msgid "Posts from the  &#8216;%s&#8217; Category"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:6
+#, php-format
+msgid "Posts tagged &#8216;%s&#8217;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:8
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:10
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:12
+msgid "Archive for"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:8
+msgid "F jS, Y"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:10
+msgid "F, Y"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:12
+msgid "Y"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:14
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:16
+msgid "Blog Archives"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:18
+msgid "comment"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:22
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:8
+msgid "n.j.y"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:27
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:25
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:13
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/archive.php:28
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:26
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:14
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:16
+msgid "No Responses"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:16
+msgid "One Response"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:16
+msgid "% Responses"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:18
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:9
+msgid "Leave One"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:18
+msgid "leave one &rarr;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:25
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:26
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:29
+msgid "Trackbacks and Pingbacks"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:35
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:41
+msgid "No comments yet"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:58
+msgid "Leave a Reply"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:60
+msgid "You must be"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:60
+msgid "logged in"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:60
+msgid "to post a comment."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:65
+msgid "Logged in as"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:65
+msgid "Log out &raquo;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:67
+msgid "Name"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:67
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:68
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:59
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:60
+msgid "(required)"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:68
+msgid "Email"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:69
+msgid "Website:"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:71
+msgid "Comment:"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:72
+msgid "<strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/comments.php:73
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:65
+msgid "Subscribe to this comment feed via RSS"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/header.php:8
+msgid "Page Not Found |"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/header.php:50
+msgid "Home"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:7
+msgid "F j"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:8
+msgid "Leave a comment"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:8
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:7
+msgid "1 Comment"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:8
+msgid "% Comment"
+msgid_plural "% Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:11
+msgid "tags: "
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:12
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:15
+msgid "read more..."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:16
+msgid "Edit This"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:20
+msgid "from &rarr;"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/index.php:20
+msgid ", "
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:2
+msgid "Enter your password to view comments."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:7
+msgid "No Comments"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:7
+msgid "% Comments"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:49
+msgid "Leave A Comment"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/legacy.comments.php:57
+msgid "Log out of this account"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:3
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:17
+#, php-format
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/search.php:19
+#, php-format
+msgid "Sorry your search for \"%s\" did not turn up any results. Please try again."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/searchform.php:4
+msgid "type and press enter"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar-feedbox.php:8
+msgid "Get Free Updates"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar-feedbox.php:10
+msgid "Get the latest and the greatest news delivered for free to your reader or your inbox:"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar-feedbox.php:11
+msgid "RSS Feed"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar-feedbox.php:12
+msgid "Email Updates"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar-feedbox.php:14
+msgid "Twitter"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/sidebar.php:15
+msgid "Recent Articles"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/single.php:19
+#, php-format
+msgid "from %s"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/comments.php:13
+msgid "permalink"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/comments.php:16
+msgid "<em><strong>Please Note:</strong> Your comment is awaiting moderation.</em>"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:6
+msgid "Custom Logo Image <a href=\"https://themes.jestro.com/members/signup.php\"><em>PRO Feature</em></a>"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:9
+msgid "Enable custom logo image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:11
+msgid "Check this box to use a custom logo."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:12
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:30
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:79
+msgid "false"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:15
+msgid "Logo image file name"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:17
+msgid "Place your images in the <code>/wp-content/themes/vigilance/images</code> subdirectory"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:21
+msgid "Logo image ALT tag"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:23
+msgid "An alt tag for your logo image. Important for SEO."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:27
+msgid "Display tagline"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:29
+msgid "Check this box to show your tagline below your logo."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:33
+msgid "Navigation"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:36
+msgid "Exclude pages from header"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:38
+msgid "Pages you wish to exclude from your top navigation. Use the page ID in a comma-delimited list (eg. 1,2,3)"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:42
+msgid "Color Scheme"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:45
+msgid "Customize colors"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:47
+msgid "If enabled the theme will use the layouts and colors you choose below."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:48
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:50
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:204
+msgid "Disabled"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:50
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:202
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:204
+msgid "Enabled"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:52
+msgid "Background color"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:54
+msgid "Your background color. Use Hex values and leave out the leading #."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:58
+msgid "Border color"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:60
+msgid "Your border color. Use Hex values and leave out the leading #."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:64
+msgid "Link colorvigilance"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:66
+msgid "Your link color. Use Hex values and leave out the leading #."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:70
+msgid "Link hover color"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:72
+msgid "Your link hover color. Use Hex values and leave out the leading #."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:76
+msgid "Disable hover images"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:78
+msgid "This is useful if you use custom link colors and do not want the default red showing when a user hovers over the comments bubble or the sidebar menu items."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:82
+msgid "Top Banner Image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:85
+msgid "Banner state"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:87
+msgid "Place your images in the <code>/wp-content/themes/vigilance/images/top-banner</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/tutorials/vigilance.htm#options-banner\">Read this for page and post specific images.</a>"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:88
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:90
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:156
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:158
+msgid "Rotating images"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:90
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:106
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:158
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:174
+msgid "Static image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:90
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:158
+msgid "Page and post specific"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:90
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:118
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:158
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:188
+msgid "Custom code"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:90
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:158
+msgid "Do not show an image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:92
+msgid "Banner height"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:94
+msgid "The height of your image. The width is fixed at 596px."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:98
+msgid "Banner alt tag"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:100
+msgid "The alt tag for your banner image(s). Will default to your blog title if left blank."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:108
+msgid "Replace your top banner with a static image.<br /><strong>Note:</strong> You must upload this image to <code>/wp-content/themes/vigilance/images/top-banner</code> <strong>and</strong> the <em>Banner State</em> must be set to \"Static Image\" for this to work."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:112
+msgid "Home image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:114
+msgid "Replace your home top banner with a specific image.<br /><strong>Note:</strong> You must upload this image to <code>/wp-content/themes/vigilance/images/top-banner</code> <strong>and</strong> the <em>Banner State</em> must be set to \"Post and page specific\" for this to work."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:120
+msgid "Replace your top banner with custom code.<br /><strong>Note:</strong> The <em>Banner State</em> must be set to \"Custom code\" for this to work."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:126
+msgid "Alert Box"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:129
+msgid "Alert Box On/Off"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:131
+msgid "Toggle the alert box."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:132
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:134
+msgid "Off"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:134
+msgid "On"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:136
+msgid "Alert Title"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:138
+msgid "The title of your alert."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:142
+msgid "Alert Message"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:144
+msgid "Must use HTML in the message including <code>&#60;p&#62;</code> tags."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:150
+msgid "Sidebar Image"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:153
+msgid "Image state"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:154
+msgid "Place your images in the <code>/wp-content/themes/vigilance/images/sidebar</code> subdirectory and they will be added to the rotation. <br /><a href=\"http://themes.jestro.com/tutorials/vigilance.htm#options-banner\">Read this for page and post specific images.</a>"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:160
+msgid "Image height"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:162
+msgid "The height of your image. The width is fixed at 300px."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:166
+msgid "Image alt tag"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:168
+msgid "The alt tag for your sidebar image(s). Will default to your blog title if left blank."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:176
+msgid "Replace your sidebar image with a static image.<br /><strong>Note:</strong> You must upload this image to <code>/wp-content/themes/vigilance/images/sidebar</code> <strong>and</strong> the <em>Image State</em> must be set to \"Static Image\"\" for this to work."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:180
+msgid "Image link"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:182
+msgid "Define a hyperlink for your sidebar image. If left empty the anchor tags will not be included."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:190
+msgid "Replace your sidebar image with custom code.<br /><strong>Note:</strong> The <em>Image State</em> must be set to \"Custom code\" for this to work."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:196
+msgid "Sidebar Feed Box"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:199
+msgid "Feed box state"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:200
+msgid "Enable or disable the feed box in the sidebar."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:206
+msgid "Feed box title text"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:208
+msgid "Title of your feed box."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:212
+msgid "Feed box intro text"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:214
+msgid "Enter your feed intro text here."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:220
+msgid "<a href=\"http://www.feedburner.com\">Feedburner</a> email updates link"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:222
+msgid "Enter your feed email link here. <strong>Do not paste the entire link code, just the URL.</strong><br /><del>&#60;a href=&#34;</del> <code>http://feedburner.google.com/fb/a/mailverify?uri=YOURFEEDID&amp;loc=en_US</code> <del>&#34;&#62;Subscribe to Your Feed by Email&#60;/a&#62;</del>"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:228
+msgid "Enable Twitter"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:230
+msgid "Hip to Twitter? Check this box."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:234
+msgid "Twitter updates link"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:236
+msgid "Enter your twitter link here."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:241
+msgid "Footer"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:244
+msgid "Copyright notice"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:246
+msgid "Enter your copyright info above."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:247
+msgid "Your Name Here"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:250
+msgid "Stats code"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:252
+msgid "If you use Google Analytics or need any other tracking script in your footer just copy and paste it here.<br /> The script will be inserted before the closing <code>&#60;/body&#62;</code> tag."
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:306
+#, php-format
+msgid "%s Options"
+msgstr ""
+
+#: /Users/dstrojny/Sites/wordpress_stable/wp-content/themes/vigilance/functions/vigilance-admin.php:307
+msgid "Welcome to the Vigilance Options menu. If you have any questions or need support please sign up for a <a href=\"https://themes.jestro.com/members/signup.php\">PRO Membership</a>. Vigilance was hand coded and brought to you by <a href=\"http://www.jestro.com/\">Jestro</a>."
+msgstr ""
+
