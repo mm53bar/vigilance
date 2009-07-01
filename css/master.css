@@ -125,17 +125,10 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	}
 .alert-box {
   margin: 0 0 20px 0;
-  padding: 0 20px;
+  padding: 20px;
   background: #EAE9E5;
 	border-top: 2px solid #E3E1DB;
 	border-bottom: 2px solid #E3E1DB;
-  }
-.alert-box h2, .alert-box h3, .alert-box h4 {
-  margin: 0;
-  padding: 0;
-  }
-.alert-box p {
-  margin: 10px 0;
   }
 /*Post Styling
 ------------------------------------------------------------ */
@@ -206,6 +199,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 ---------------------------------------*/
 .entry { font-size: 1.3em; }
 .entry p { margin-bottom: 10px; }
+.alert-box p { margin: 10px 0 0 0; }
 .entry h2, .entry h3, .entry h4 {
 	font-size: 1.3em;
 	padding: 15px 0 5px 0;
@@ -218,6 +212,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
   padding-top: 10px;
   font-size: .9em;
   }
+.alert-box h2, .alert-box h3, .alert-box h4 { margin: 0; padding: 0; }
 pre {
   margin: 10px 0;
   padding: 1em 10px;
