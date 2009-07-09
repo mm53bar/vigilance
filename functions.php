@@ -13,5 +13,5 @@ function legacy_comments($file) {
 }
 
 //Text Domain
-load_theme_textdomain('vigilance');
+load_theme_textdomain('vigilance', dirname(__FILE__) . '/language');
 ?>
