@@ -55,7 +55,7 @@
     <div class="cancel-comment-reply">
       <small><?php cancel_comment_reply_link(); ?></small>
     </div>
-    <h4 id="postcomment"><?php comment_form_title(__ ( 'Leave a Reply', 'Leave a Reply to %s', 'vigilance' )); ?></h4>
+    <h4 id="postcomment"><?php comment_form_title(__ ( 'Leave a Reply', 'vigilance' ), __( 'Leave a Reply', 'Leave a Reply to %s', 'vigilance' )); ?></h4>
     <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
       <p><?php _e('You must be', 'vigilance') ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>"><?php _e('logged in', 'vigilance') ?></a> <?php _e('to post a comment.', 'vigilance') ?></p>
       </div><!--end respond-->
@@ -70,7 +70,7 @@
       <?php endif; ?>
       <p><label for="comment" class="comment-field"><small><?php _e('Comment:', 'vigilance') ?></small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
       <p class="guidelines"><?php _e('<strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published.', 'vigilance') ?></p>
-      <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>
+      <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS', 'vigilance')); ?></p>
 			<div>
       	<?php do_action('comment_form', $post->ID); ?>
 			</div>

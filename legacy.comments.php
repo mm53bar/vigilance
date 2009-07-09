@@ -46,7 +46,7 @@
 <?php endif; ?>
 
 <?php if ( comments_open() ) : ?>
-  <h4 id="postcomment"><?php _e('Leave A Comment'); ?></h4>
+  <h4 id="postcomment"><?php comment_form_title(__ ( 'Leave a Reply', 'vigilance' ), __( 'Leave a Reply', 'Leave a Reply to %s', 'vigilance' )); ?></h4>
   <div id="respond">
     <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
       <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">logged in</a> to post a comment.</p>
@@ -62,7 +62,7 @@
       <?php endif; ?>
       <p><label for="comment" class="comment-field"><small>Comment:</small></label><textarea name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea></p>
       <p class="guidelines"><strong>Note:</strong> You can use basic XHTML in your comments. Your email address will <strong>never</strong> be published.</p>
-      <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS')); ?></p>
+      <p class="comments-rss"><?php comments_rss_link(__('Subscribe to this comment feed via RSS', 'vigilance')); ?></p>
       <?php do_action('comment_form', $post->ID); ?>
       <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></p>
       </form><!--end commentform-->
