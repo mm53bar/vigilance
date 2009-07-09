@@ -1,4 +1,7 @@
 <?php
+//Text Domain
+load_theme_textdomain('vigilance', dirname(__FILE__) . '/language');
+
 define ('FUNCTIONS', TEMPLATEPATH . '/functions');
 define ('COPY', FUNCTIONS . '/vigilance.php');
 require_once (FUNCTIONS . '/sidebars.php');
@@ -11,7 +14,4 @@ function legacy_comments($file) {
 	if(!function_exists('wp_list_comments')) 	$file = TEMPLATEPATH . '/legacy.comments.php';
 	return $file;
 }
-
-//Text Domain
-load_theme_textdomain('vigilance', dirname(__FILE__) . '/language');
 ?>
