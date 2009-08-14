@@ -11,41 +11,33 @@
   $static_banner_status = get_post_meta($post->ID, 'img-status', $single = true); 
 ?> 
 
-<?php //-----Rotating Image---------------------------------------------------------------------------------//
-if ($banner_state == 'Rotating images') {?>
+<?php //-----Page and Post Specific---------------------------------------------------------------------------------//
+if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_home == '' && $static_banner_status !=='hidden') : ?>
   <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
+    <img src="<?php echo $static_banner_url; ?>" width="596" height="<?php if ($static_banner_height !== '') echo wp_filter_post_kses($static_banner_height); else echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($static_banner_alt !== '') echo stripslashes(wp_filter_post_kses($static_banner_alt)); else echo the_title(); ?>"/>
+   </div><!--end menu-->
+
+<?php //-----Home Page---------------------------------------------------------------------------------//
+elseif ($banner_home !== '' && is_front_page()) : ?>
+	 <div id="menu">
+  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
-<?php 
-} ?>
 
 <?php //-----Static Image---------------------------------------------------------------------------------//
-if ($banner_state == 'Static image' && $banner_url !== '') {?>
+elseif ($banner_state == 'Static image' && $banner_url !== '') : ?>
   <div id="menu">
   	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo wp_filter_post_kses($banner_url); ?>" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
-<?php 
-} ?>
-
-<?php //-----Page and Post Specific---------------------------------------------------------------------------------//
-if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_state == 'Page and post specific' && $static_banner_status !=='hidden') {?>
-  <div id="menu">
-    <img src="<?php echo $static_banner_url; ?>" width="596" height="<?php if ($static_banner_height !== '') echo wp_filter_post_kses($static_banner_height); else echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($static_banner_alt !== '') echo stripslashes(wp_filter_post_kses($static_banner_alt)); else echo the_title(); ?>"/>
-   </div><!--end menu-->				
-<?php 
-} ?>
-
-<?php if ($banner_state == 'Page and post specific' && $banner_home !== '' && is_front_page()) {?>
-  <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
-  </div><!--end menu-->
-<?php 
-} ?>
 
 <?php //------Custom Code---------------------------------------------------------------------------------//
-if ($banner_state == 'Custom code') {?>
+elseif ($banner_state == 'Custom code') : ?>
   <div id="menu">
   	<?php echo stripslashes(wp_filter_post_kses($banner_custom)); ?>
   </div><!--end menu-->
-<?php 
-} ?>
+
+<?php //-----Rotating Image---------------------------------------------------------------------------------//
+else : ?>
+  <div id="menu">
+  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
+  </div><!--end menu-->
+<?php endif; ?>
