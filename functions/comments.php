@@ -4,7 +4,7 @@
   $GLOBALS['comment'] = $comment;
 ?>
       <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>" >
-      <div class="c-grav"><?php echo get_avatar( get_comment_author_email(), '80' )?></div>
+      <div class="c-grav"><?php echo get_avatar( get_comment_author_email(), '60' )?></div>
   			<div class="c-body">
           <div class="c-date">
             <span><?php comment_date('Y'); ?></span> <?php comment_date('F j'); ?>

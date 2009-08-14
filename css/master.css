@@ -497,10 +497,10 @@ ul.children {
   clear: both;
 	}
 div.alt, li.thread-odd { background: #fff; }
-div.admin, li.comment.bypostauthor, li.comment li.comment.bypostauthor, li.comment.comment-author-admin, li.comment li.comment.comment-author-admin { background: #DCDFC2; }
+div.admin, li.comment.bypostauthor, li.comment li.comment.bypostauthor, li.comment.comment-author-admin, li.comment li.comment.comment-author-admin { background: #f8f8f8; }
 div.c-grav {
 	float: left;
-	width: 80px;
+	width: 60px;
 	margin: 0;
 	text-align: right;
 	}
