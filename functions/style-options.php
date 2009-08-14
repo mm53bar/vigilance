@@ -44,14 +44,6 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 ------------------------------------------------------------ */
 #content .entry a:hover { color: #<?php echo $hover_color; ?>; }
 #wrapper #sidebar a:hover { color: #<?php echo $hover_color; ?>; }
-  <?php if ($image_hover == 'true') { ?>
-/*Hide hover colors on comment images and sidebar menu images
------------------------------------------------------------- */
-.comments a:hover { background: url(../images/comments-bubble.gif) no-repeat 0 .4em; }
-ul li.widget ul li a:hover { background: url(../images/list-item.gif) no-repeat 0 .35em; }
-  <?php 
-  } ?>
-
 /*Reset Specific Link Colors
 ------------------------------------------------------------ */
 #content .post-header h1 a:link, #content .post-header h1 a:visited, #content .post-header h2 a:link, #content .post-header h2 a:visited  { color: #444; }
@@ -68,3 +60,10 @@ ul li.widget ul li a:hover { background: url(../images/list-item.gif) no-repeat 
 #footer a:hover { color: #<?php echo $link_color; ?>; }
 <?php 
 } ?>
+<?php if ($image_hover == 'true') { ?>
+/*Hide hover colors on comment images and sidebar menu images
+------------------------------------------------------------ */
+.comments a:hover { background-position: 0 6px; }
+ul li.widget ul li a:hover { background-position: 0 7px; }
+  <?php 
+  } ?>

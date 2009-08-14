@@ -159,7 +159,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	}
 .comments a:hover {
 	color: #772124;
-	background: url(../images/comments-bubble.gif) no-repeat 0 -22px;
+	background-position: 0 -22px;
 	}
 .date {
 	float: right;
@@ -405,16 +405,16 @@ ul li.widget ul li ul {
   font-size: 1em; 
   }
 ul li.widget ul li { 
-	padding: 8px 0 6px 0;
+	padding: 8px 0;
 	border-bottom: 1px solid #dddddd; 
 	}
 ul li.widget ul li ul li { border-bottom: none; }
 ul li.widget ul li a {
   display: block;
-	padding: 0 0 0 14px;
-	background: url(../images/list-item.gif) no-repeat 0 .45em;
+	padding: 0 0 0 15px;
+	background: url(../images/list-item.gif) no-repeat 0 7px;
 	}
-ul li.widget ul li a:hover { background: url(../images/list-item-hover.gif) no-repeat 0 .45em; }
+ul li.widget ul li a:hover { background-position: 0 -15px; }
 ul li.widget ul#recentcomments li a {
 	padding: 0;
 	background: none;
