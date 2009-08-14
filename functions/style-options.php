@@ -65,5 +65,5 @@ h1#title a:hover, div#title a:hover { color: #<?php echo $link_color; ?>; }
 ------------------------------------------------------------ */
 .comments a:hover { background-position: 0 6px; }
 ul li.widget ul li a:hover { background-position: 0 7px; }
-  <?php 
-  } ?>
+<?php 
+} ?>
