@@ -19,7 +19,7 @@ if ((is_single() || is_page()) && $static_banner_url !== '' && $banner_home == '
 
 <?php //-----Home Page---------------------------------------------------------------------------------//
 elseif ($banner_home !== '' && is_front_page()) : ?>
-	 <div id="menu">
+	<div id="menu">
   	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo $banner_home; ?>" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
 
