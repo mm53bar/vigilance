@@ -37,7 +37,9 @@ elseif ($banner_state == 'Custom code') : ?>
 
 <?php //-----Rotating Image---------------------------------------------------------------------------------//
 else : ?>
-  <div id="menu">
-  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
-  </div><!--end menu-->
+	<?php if ($banner_state !== 'Do not show an image' ) : ?>
+  	<div id="menu">
+	  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
+	  </div><!--end menu-->
+	<?php endif; ?>
 <?php endif; ?>
