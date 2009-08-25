@@ -154,7 +154,7 @@ $options = array(
 			    			"id" => $shortname."_sideimg_state",
 			    			"std" => __('Rotating images', 'vigilance'),
 			    			"type" => "select",
-			    			"options" => array(__('Rotating images', 'vigilance'), __('Static image', 'vigilance'), __('Page and post specific', 'vigilance'), __('Custom code', 'vigilance'), __('Do not show an image', 'vigilance'))),
+			    			"options" => array(__('Rotating images', 'vigilance'), __('Static image', 'vigilance'), __('Custom code', 'vigilance'), __('Do not show an image', 'vigilance'))),
         
         array(	"name" => __('Image height', 'vigilance'),
 					    	"id" => $shortname."_sideimg_height",
@@ -166,9 +166,7 @@ $options = array(
 					    	"id" => $shortname."_sideimg_alt",
               	"desc" => __('The alt tag for your sidebar image(s). Will default to your blog title if left blank.', 'vigilance'),
 					    	"std" => "",
-					    	"type" => "textarea",
-              	"options" => array(	"rows" => "2",
-										   							"cols" => "40") ),
+					    	"type" => "text"),
         
         array(	"name" => __('Static image', 'vigilance'),
 					    	"id" => $shortname."_sideimg_url",
