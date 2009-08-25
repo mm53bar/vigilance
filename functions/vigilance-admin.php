@@ -110,7 +110,7 @@ $options = array(
               
         array(	"name" => __('Home image', 'vigilance'),
 					    	"id" => $shortname."_banner_home",
-								"desc" => __('Replace your home top banner with a specific image.<br /><strong>Note:</strong> You must upload this image to <code>/wp-content/themes/vigilance/images/top-banner</code> <strong>and</strong> the <em>Banner State</em> must be set to "Post and page specific" for this to work.', 'vigilance'),
+								"desc" => __('Replace your home top banner with a specific image.<br /><strong>Note:</strong> You must upload this image to <code>/wp-content/themes/vigilance/images/top-banner</code>.', 'vigilance'),
 					    	"std" => "",
 					    	"type" => "text"),
         
