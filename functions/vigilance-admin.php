@@ -61,7 +61,7 @@ $options = array(
 					    	"std" => "d7dab9",
 					    	"type" => "text"),
         
-        array(	"name" => __('Link color'. 'vigilance'),
+        array(	"name" => __('Link color', 'vigilance'),
 					    	"id" => $shortname."_link_color",
 								"desc" => __('Your link color. Use Hex values and leave out the leading #.', 'vigilance'),
 					    	"std" => "772124",
