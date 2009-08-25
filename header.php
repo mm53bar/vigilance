@@ -38,7 +38,7 @@
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <div id="wrapper">
 	<div id="header" class="clear">
 		<?php if (is_home()) echo('<h1 id="title">'); else echo('<div id="title">');?><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a><?php if (is_home()) echo('</h1>'); else echo('</div>');?>

@@ -161,7 +161,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	color: #772124;
 	background-position: 0 -22px;
 	}
-.date {
+.post .date {
 	float: right;
 	padding-top: 10px;
 	color: #757575;
@@ -170,7 +170,7 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	}
-.date span {
+.post .date span {
 	color: #ddd;
 	font-weight: bold;
 	}
