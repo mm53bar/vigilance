@@ -3,10 +3,10 @@
   $feed_state = get_option('V_feed_state');
 ?>
 	<div id="sidebar">
-  	<?php if ($sideimg_state == 'Do not show an image') : else : ?>
+  	<?php if ($sideimg_state == 'hide') : else : ?>
   		<?php include (TEMPLATEPATH . '/sidebar-imagebox.php'); ?>
   	<?php endif; ?>
-    <?php if ($feed_state == 'Disabled') : else : ?>
+    <?php if ($feed_state == 'disabled') : else : ?>
   		<?php include (TEMPLATEPATH . '/sidebar-feedbox.php'); ?>
   	<?php endif; ?>
   	<ul>

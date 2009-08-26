@@ -24,20 +24,20 @@ elseif ($banner_home !== '' && is_front_page()) : ?>
   </div><!--end menu-->
 
 <?php //-----Static Image---------------------------------------------------------------------------------//
-elseif ($banner_state == 'Static image' && $banner_url !== '') : ?>
+elseif ($banner_state == 'static' && $banner_url !== '') : ?>
   <div id="menu">
   	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/<?php echo wp_filter_post_kses($banner_url); ?>" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
   </div><!--end menu-->
 
 <?php //------Custom Code---------------------------------------------------------------------------------//
-elseif ($banner_state == 'Custom code') : ?>
+elseif ($banner_state == 'custom') : ?>
   <div id="menu">
   	<?php echo stripslashes(wp_filter_post_kses($banner_custom)); ?>
   </div><!--end menu-->
 
 <?php //-----Rotating Image---------------------------------------------------------------------------------//
 else : ?>
-	<?php if ($banner_state !== 'Do not show an image' ) : ?>
+	<?php if ($banner_state !== 'hide' ) : ?>
   	<div id="menu">
 	  	<img src="<?php bloginfo('template_url'); ?>/images/top-banner/rotate.php" width="596" height="<?php echo wp_filter_post_kses($banner_height); ?>" alt="<?php if ($banner_alt !== '') echo stripslashes(wp_filter_post_kses($banner_alt)); else echo bloginfo('name'); ?>"/>
 	  </div><!--end menu-->

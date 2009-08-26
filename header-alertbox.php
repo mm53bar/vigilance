@@ -5,7 +5,7 @@
 ?> 
 
 <?php
-if ($alertbox_state == 'On') {?>
+if ($alertbox_state == 'on') {?>
   <div class="alert-box entry">
     <h2><?php echo stripslashes(wp_filter_post_kses($alertbox_title)); ?></h2>
     <?php echo stripslashes(wp_filter_post_kses($alertbox_content)); ?>

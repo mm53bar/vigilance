@@ -11,7 +11,7 @@ header("Content-type: text/css");
   $hover_color = get_option('V_hover_color');
   $image_hover = get_option('V_image_hover');
 ?> 
-<?php if ($css == 'Enabled') {?>
+<?php if ($css == 'enabled') {?>
 /*Background
 ------------------------------------------------------------ */
 body { background: #<?php echo $background_color; ?>; }
