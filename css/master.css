@@ -92,24 +92,17 @@ h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
 	}
 #nav ul {
 	padding: 0 0 0 20px;
-	list-style: none;
 	position: relative;
 	}
 #nav ul li {
-	display: inline;
+	float: left;
 	margin: 0 0 0 15px;
 	}
-#nav .page_item a:link, #nav .page_item a:visited {
+#nav li a:link, #nav li a:visited {
 	color: #333;
 	text-decoration: none;
 	}
-#nav .page_item a:hover {
-	color: #772124;
-	text-decoration: none;
-	padding-top: .1em;
-	border-top: 4px solid #772124;
-	}
-#nav .current_page_item a:link, #nav .current_page_item a:visited, #nav .current_page_item a:hover, #nav .current_page_parent a:link, #nav .current_page_parent a:visited, #nav .current_page_parent a:hover, #nav .current_page_ancestor a:link, #nav .current_page_ancestor a:visited, #nav .current_page_ancestor a:hover {
+#nav li.current_page_item a, #nav li.current_page_parent a, #nav li.current_page_ancestor a, #nav li.current-cat a, #nav li a:hover {
 	color: #772124;
 	text-decoration: none;
 	padding-top: .1em;

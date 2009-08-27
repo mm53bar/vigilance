@@ -49,7 +49,15 @@
 			<ul>
 				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>"><?php _e('Home', 'vigilance') ?></a></li>
         <?php $exclude_pages = get_option('V_pages_to_exclude'); ?>
-        <?php wp_list_pages('depth=1&title_li=&exclude=' . $exclude_pages); ?>
+        <?php $exclude_cats = get_option('V_categories_to_exclude'); ?>
+				<?php $hide_pages = get_option('V_hide_pages'); ?>
+				<?php $hide_cats = get_option('V_hide_cats'); ?>
+				<?php if ($hide_pages !== 'true') : ?>
+        	<?php wp_list_pages('title_li=&exclude=' . $exclude_pages); ?>
+				<?php endif; ?>
+				<?php if ($hide_cats != 'true') : ?>
+        	<?php wp_list_categories('title_li=&exclude=' . $exclude_cats); ?>
+				<?php endif; ?>
 			</ul>
 		</div><!--end nav-->
 	</div><!--end header-->
