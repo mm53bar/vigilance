@@ -1,5 +1,5 @@
 <?php 
-function mytheme_add_admin() {
+function vigilance_add_admin() {
 	global $themename, $shortname, $options;
 	if ( $_GET['page'] == basename(__FILE__) ) {
   	if ( 'save' == $_REQUEST['action'] ) {
@@ -33,7 +33,7 @@ function headimage_admin(){
 	
 }
 
-function mytheme_admin() {
+function vigilance_admin() {
 
     global $themename, $shortname, $options;
 
@@ -177,5 +177,5 @@ function option_wrapper_footer_nobreak ($values){
 	</tr>
 	<?php 
 }
-add_action('admin_menu', 'mytheme_add_admin'); 
+add_action('admin_menu', 'vigilance_add_admin'); 
 ?>

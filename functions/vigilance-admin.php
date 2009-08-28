@@ -1,5 +1,11 @@
+<?php
+// Vigilance Options stylesheet
+function woothemes_admin_head() { 
+    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/functions/admin.css" media="screen" />';
+}
+?>
 <?php 
-function mytheme_add_admin() {
+function vigilance_add_admin() {
 	global $themename, $shortname, $options;
 	if ( $_GET['page'] == basename(__FILE__) ) {
   	if ( 'save' == $_REQUEST['action'] ) {
@@ -41,12 +47,12 @@ function mytheme_admin() {
     if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' Settings reset.</strong></p></div>';
     
 ?>
-<div id="theme-options">
-	<p>Test</p>
+<div id="vigilance-options">
+	<h1>Vigilance Options</h1>
 </div>
 <?php
 
 
 }
-add_action('admin_menu', 'mytheme_add_admin'); 
+add_action('admin_menu', 'vigilance_add_admin'); 
 ?>
