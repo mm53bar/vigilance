@@ -9,6 +9,9 @@ require_once (FUNCTIONS . '/comments.php');
 require_once (FUNCTIONS . '/vigilance-options.php');
 require_once (FUNCTIONS . '/vigilance-admin.php');
 
+//Actions
+add_action('admin_head', 'vigilance_admin_head'); 
+
 // Use legacy comments template for versions less than 2.7
 add_filter('comments_template', 'legacy_comments');
 function legacy_comments($file) {

@@ -1,0 +1,48 @@
+div#v-options {
+	width: 600px;
+}
+#v-options h1 {
+	font-family: Georgia, "Times New Roman", Times, Serif;
+	font-weight: normal;
+	font-size: 2.2em;
+	padding-bottom: 10px;
+}
+div#vop-header p {
+	padding: 15px;
+	background: #DCF3DB;
+	font-size: 1.1em;
+	border: 1px solid #C9E6C8;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div#vop-header p strong { color: #20441E;}
+div.v-option h3 {
+	padding: 15px;
+	margin: 15px 0 0 0;
+	background: #F1F1F1;
+	color: #4E4C41;
+	border: 1px solid #E6E6E6;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div.v-option h3.open {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+}
+div.v-option span {
+	font-size: .9em;
+	font-weight: normal;
+	float: right;
+	color: #AEA994;
+}
+div.v-option-body {
+	margin: 0;
+	padding: 15px;
+	background: #FBFBFA;
+	border: 1px solid #E6E6E6;
+	border-top: none;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+}
