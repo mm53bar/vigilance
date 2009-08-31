@@ -1,5 +1,5 @@
 div#v-options {
-	width: 600px;
+	width: 700px;
 }
 #v-options h1 {
 	font-family: Georgia, "Times New Roman", Times, Serif;
@@ -9,23 +9,23 @@ div#v-options {
 }
 div#vop-header p {
 	padding: 15px;
-	background: #DCF3DB;
+	background: #dcf3db;
 	font-size: 1.1em;
-	border: 1px solid #C9E6C8;
+	border: 1px solid #c9e6C8;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 }
-div#vop-header p strong { color: #20441E;}
+div#vop-header p strong { color: #20441e;}
 div.v-option h3 {
 	margin: 15px 0 0 0;
 	padding: 15px 15px 15px 40px;
 	font-size: 1.2em;
 	color: #4e4c41;
-	border: 1px solid #E6E6E6;
+	background: #f1f1f1 url(images/toggle.gif) no-repeat 10px 13px;
+	border: 1px solid #e6e6e6;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	cursor: pointer;
-	background: #F1F1F1 url(images/toggle.gif) no-repeat 10px 13px;
 }
 div.v-option h3.open {
 	-moz-border-radius: 6px 6px 0 0;
@@ -42,8 +42,8 @@ div.v-option span {
 div.v-option-body {
 	margin: 0;
 	padding: 15px;
-	background: #FBFBFA;
-	border: 1px solid #E6E6E6;
+	background: #fbfbfa;
+	border: 1px solid #e6e6e6;
 	border-top: none;
 	-moz-border-radius: 0 0 6px 6px;
 	-webkit-border-bottom-left-radius: 6px;
