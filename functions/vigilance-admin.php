@@ -44,13 +44,36 @@ function mytheme_admin() {
 <div id="v-options">
 	<div id="vop-header">
 		<h1>Vigilance Options</h1>
-		<p><strong>Need help with these options?</strong> <a href="http://themes.jestro.com/tutorials/vigilance.htm">Read the tutorials</a> or visit the <a href="http://themes.jestro.com/forums/">support forums</a>.</p>
+		<p><strong>Need help with these options?</strong> Please <a href="http://themes.jestro.com/tutorials/vigilance.htm">Read the tutorials</a> or visit the <a href="http://themes.jestro.com/forums/">support forums</a>.</p>
 	</div><!--end vop-header-->
 	<div id="vop-body">
 		<div class="v-option v-custom-logo">
 			<h3>Custom Logo <span>your custom logo image in the header</span></h3>
-			<div class="v-option-body">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+			<div class="v-option-body clear">
+				<p>This feature is for users with a PRO membership. Please download and activate the PRO Child theme and these features will automatically be enabled.</p>
+				<div class="v-field check clear">
+					<div class="v-field-d">Check this box to use a custom logo in the header of your theme.</div>
+					<input id="V_logo" type="checkbox" name="V_logo" value=""  />
+					<label for="V_logo">Enable custom logo image</label>
+				</div>
+				<div class="v-field text clear">
+					<div class="v-field-d">Place your images in the <code>/wp-content/themes/vigilance/images</code> subdirectory.</div>
+					<label for="V_logo_img">Logo image file name:</label>
+					<input id="V_logo_img" type="text" name="V_logo_img" value="" />
+				</div>
+				<div class="v-field text clear">
+					<div class="v-field-d">Add an <code>alt</code> tag to your logo image. This is important for SEO.</div>
+					<label for="V_logo_img_alt">Logo image file name:</label>
+					<input id="V_logo_img_alt" type="text" name="V_logo_img_alt" value="" />
+				</div>
+				<div class="v-field check clear">
+					<div class="v-field-d">When using a custom logo the tagline is disabled by default. Check this box to show your tagline below your logo.</div>
+					<input id="V_tagline" type="checkbox" name="V_tagline" value=""  />
+					<label for="V_tagline">Show tagline</label>
+				</div>
+				<div class="v-save-button submit">
+					<input type="submit" value="Save changes" name="save"/>
+				</div>
 			</div><!--end v-option-body-->
 		</div><!--end v-option-->
 		<div class="v-option v-navigation">

@@ -1,5 +1,8 @@
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clear { zoom: 1;}
 div#v-options {
 	width: 700px;
+	padding-bottom: 40px;
 }
 #v-options h1 {
 	font-family: Georgia, "Times New Roman", Times, Serif;
@@ -48,4 +51,30 @@ div.v-option-body {
 	-moz-border-radius: 0 0 6px 6px;
 	-webkit-border-bottom-left-radius: 6px;
 	-webkit-border-bottom-right-radius: 6px;
+}
+div.v-field {
+	margin: 30px 0;
+}
+div.v-field-d {
+	float: right;
+	width: 320px;
+	padding: 15px;
+	background: #f6f6f6;
+	color: #888;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+div.v-field.text label {
+	display: block;
+	padding-bottom: 5px;
+}
+div.v-field.text input {
+	width: 250px;
+	padding: 5px;
+}
+div.v-option div.submit {
+	padding: 0;
+}
+div.v-option div.submit input {
+	font-size: 1.1em !important;
 }
