@@ -187,8 +187,6 @@ function mytheme_admin() {
 </div>
 
 <?php
-
-
 }
 add_action('admin_menu', 'vigilance_add_admin'); 
 ?>
