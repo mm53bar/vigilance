@@ -185,7 +185,6 @@ function mytheme_admin() {
 		</div>
 	</div><!--end vop-body-->
 </div>
-
 <?php
 }
 add_action('admin_menu', 'vigilance_add_admin'); 
