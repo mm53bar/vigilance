@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
  // shows on clicking the noted link
   jQuery('h3').click(function() {
 		jQuery(this).toggleClass("open");
-		jQuery(this).next("div").toggle();
+		jQuery(this).next("div").slideToggle('1000');
 		return false;
   });	
 });

@@ -60,11 +60,11 @@ div.v-field-d {
 	width: 320px;
 	padding: 15px;
 	background: #f6f6f6;
-	color: #888;
+	color: #777;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 }
-div.v-field.text label {
+div.v-field.text label, div.v-field.select label, div.v-field.textarea label {
 	display: block;
 	padding-bottom: 5px;
 }
@@ -72,9 +72,18 @@ div.v-field.text input {
 	width: 250px;
 	padding: 5px;
 }
+div.v-field.textarea textarea {
+	width: 250px;
+	padding: 5px;
+	height: 100px;
+}
 div.v-option div.submit {
 	padding: 0;
 }
-div.v-option div.submit input {
+div#vop-body div.submit input {
 	font-size: 1.1em !important;
+}
+div#vop-body div.submit input.v-reset {
+	font-size: .9em !important;
+	float: right;
 }
