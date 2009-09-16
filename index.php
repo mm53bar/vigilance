@@ -12,7 +12,7 @@
 				<div class="author"><?php printf(__ ('by %s', 'vigilance'), get_the_author())?></div>
 			</div><!--end meta-->
 			<div class="entry clear">
-				<?php the_content(__('read more...', 'vigilance')); ?>
+				<?php the_excerpt(); ?>
         <?php edit_post_link(__('Edit This','<p>','</p>', 'vigilance')); ?>
 				<?php wp_link_pages(); ?>
 			</div><!--end entry-->
