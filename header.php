@@ -41,10 +41,14 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
 	<div id="header" class="clear">
-		<?php if (is_home()) echo('<h1 id="title">'); else echo('<div id="title">');?><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a><?php if (is_home()) echo('</h1>'); else echo('</div>');?>
+		<?php if (is_home()) echo('<h1 id="title">'); else echo('<div id="title">');?>
+		<a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('name'); ?> | <?php bloginfo('description');?>" class="sitelogo"></a>
+		<?php if (is_home()) echo('</h1>'); else echo('</div>');?>
+	<!--
 		<div id="description">
 			<h2><?php bloginfo('description'); ?></h2>
 		</div><!--end description-->
+		-->
 		<div id="nav">
 			<ul>
 				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>"><?php _e('Home', 'vigilance') ?></a></li>
