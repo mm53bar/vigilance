@@ -44,11 +44,11 @@
 		<?php if (is_home()) echo('<h1 id="title">'); else echo('<div id="title">');?>
 		<a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('name'); ?> | <?php bloginfo('description');?>" class="sitelogo"></a>
 		<?php if (is_home()) echo('</h1>'); else echo('</div>');?>
-	<!--
-		<div id="description">
-			<h2><?php bloginfo('description'); ?></h2>
-		</div><!--end description-->
-		-->
+		<?php if (get_option('V_tagline') == 'true') : ?>
+			<div id="description">
+				<h2><?php bloginfo('description'); ?></h2>
+			</div><!--end description-->
+		<?php endif; ?>
 		<div id="nav">
 			<ul>
 				<li class="page_item <?php if (is_front_page()) echo('current_page_item');?>"><a href="<?php bloginfo('url'); ?>"><?php _e('Home', 'vigilance') ?></a></li>
